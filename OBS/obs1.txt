@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Create function names using paste() in R - Stack Overflow</title>
+<link rel="shortcut icon" href="http://cdn.sstatic.net/stackoverflow/img/favicon.ico">
+<link rel="apple-touch-icon" href="http://cdn.sstatic.net/stackoverflow/img/apple-touch-icon.png">
+<link rel="search" type="application/opensearchdescription+xml" title="Stack Overflow" href="/opensearch.xml">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script><script type="text/javascript" src="http://cdn.sstatic.net/js/stub.js?v=83b912159123"></script><link rel="stylesheet" type="text/css" href="http://cdn.sstatic.net/stackoverflow/all.css?v=a5a942fb162b">
+<meta name="relativepagescore" content="5555">
+<link rel="canonical" href="http://stackoverflow.com/questions/14915652/create-function-names-using-paste-in-r">
+<link rel="alternate" type="application/atom+xml" title="Feed for question 'Create function names using paste() in R'" href="/feeds/question/14915652">
+<script type="text/javascript">
+        
+        StackExchange.ready(function () {
+
+            
+            StackExchange.question.init({showAnswerHelp:true,totalCommentCount:0,shownCommentCount:0,highlightColor:'#F4A83D',backgroundColor:'#FFF',questionId:14915652});
+
+            styleCode();
+
+                StackExchange.realtime.subscribeToQuestion('1', '14915652');
+            
+                
+        });
+    </script><script type="text/javascript">
+        StackExchange.init({"stackAuthUrl":"https://stackauth.com","serverTime":1361053286,"styleCode":true,"enableUserHovercards":true,"site":{"name":"Stack Overflow","description":"Q&A for professional and enthusiast programmers","isNoticesTabEnabled":true,"recaptchaPublicKey":"6LdchgIAAAAAAJwGpIzRQSOFaO0pU6s44Xt8aTwc","enableSocialMediaInSharePopup":true},"user":{"fkey":"24c739ad32c48b16ace49616690fd26a","isAnonymous":true}});
+        StackExchange.using.setCacheBreakers({"js/prettify-full.js":"c862bf93b3ec","js/moderator.js":"3007e1fb015b","js/full-anon.js":"dc80e0686cda","js/full.js":"66e248812e9e","js/wmd.js":"4b43380ddaf2","js/third-party/jquery.autocomplete.min.js":"e5f01e97f7c3","js/mobile.js":"6eb68240242f","js/help.js":"fc9fb0517db2","js/tageditor.js":"450c9e8426fc","js/tageditornew.js":"f12653fbfd29","js/inline-tag-editing.js":"dd9274b70e5e","js/revisions.js":"7273bb714bba","js/review.js":"02779bd8445c","js/tagsuggestions.js":"c019341b234d","js/post-validation.js":"d303b0460fb6"});
+        
+    </script><script type="text/javascript">
+        StackExchange.using(
+            "gps",
+            function () {
+                StackExchange.gps.init(false);
+            }
+        );
+    </script>
+</head>
+<body class="question-page">
+    <noscript><div id="noscript-padding"></div></noscript>
+    <div id="notify-container"></div>
+    <div id="overlay-header"></div>
+    <div id="custom-header"></div>
+
+    <div class="container">
+        <div id="header">
+            <div id="portalLink">
+                <a class="genu" href="http://stackexchange.com" onclick="StackExchange.ready(function(){genuwine.click();});return false;">Stack Exchange</a>
+            </div>
+            <div id="topbar">
+                <div id="hlinks">
+                    
+
+
+
+
+
+
+
+
+
+<span id="hlinks-user">
+
+</span>
+<span id="hlinks-nav">
+                   <a href="/users/login?returnurl=%2fquestions%2f14915652%2fcreate-function-names-using-paste-in-r">log in</a>
+
+ <span class="lsep">|</span>
+                    <a href="http://careers.stackoverflow.com">careers 2.0</a>
+
+ <span class="lsep">|</span>
+
+</span>
+<span id="hlinks-custom">
+        <a href="http://chat.stackoverflow.com">chat</a>
+
+ <span class="lsep">|</span>
+            <a href="http://meta.stackoverflow.com">meta</a>
+
+ <span class="lsep">|</span>
+        <a href="/about">about</a>
+
+ <span class="lsep">|</span>
+    <a href="/faq">faq</a>
+
+</span>
+                </div>
+                <div id="hsearch">
+                    <form id="search" action="/search" method="get" autocomplete="off">
+                    <div>
+                        <input autocomplete="off" name="q" class="textbox" placeholder="search" tabindex="1" type="text" maxlength="240" size="28" value="">
+</div>
+                    </form>
+                </div>
+            </div>
+            <br class="cbt"><div id="hlogo">
+                <a href="/">Stack Overflow</a>
+            </div>
+            <div id="hmenus">
+                <div class="nav mainnavs">
+                    <ul>
+<li class="youarehere"><a id="nav-questions" href="/questions">Questions</a></li>
+                        <li><a id="nav-tags" href="/tags">Tags</a></li>
+                        <li><a id="nav-users" href="/users">Users</a></li>
+                        <li><a id="nav-badges" href="/badges">Badges</a></li>
+                        <li><a id="nav-unanswered" href="/unanswered">Unanswered</a></li>
+                    </ul>
+</div>
+                <div class="nav askquestion">
+                    <ul>
+<li>
+                            <a id="nav-askquestion" href="/questions/ask">Ask Question</a>
+                        </li>
+                    </ul>
+</div>
+            </div>
+        </div>
+
+        
+
+
+
+        <div id="content">
+            
+
+<div itemscope itemtype="http://schema.org/Article">
+<link itemprop="image" href="http://cdn.sstatic.net/stackoverflow/img/apple-touch-icon.png">
+<div id="question-header">
+    <h1 itemprop="name"><a href="/questions/14915652/create-function-names-using-paste-in-r" class="question-hyperlink">Create function names using paste() in R</a></h1>
+</div>
+<div id="mainbar">
+
+
+
+<div class="question" data-questionid="14915652" id="question">
+    
+            <div class="everyonelovesstackoverflow" id="adzerk1">
+        </div>
+
+
+    <table>
+<tr>
+<td class="votecell">
+                
+
+<div class="vote">
+    <input type="hidden" value="14915652"><a class="vote-up-off" title="This question shows research effort; it is useful and clear (click again to undo)">up vote</a>
+    <span class="vote-count-post ">1</span>
+    <a class="vote-down-off" title="This question does not show any research effort; it is unclear or not useful (click again to undo)">down vote</a>
+    
+    <a class="star-off" href="#" title="This is a favorite question (click again to undo)">favorite</a>
+    <div class="favoritecount"><b></b></div>   
+
+ 
+</div>
+
+            </td>
+            
+<td class="postcell">
+<div>
+    <div class="post-text" itemprop="description">
+        <p>I would like to do the following</p>
+
+<pre><code>X = matrix(0, nrow = p, ncol = N)
+p=5
+N=100
+for (i in 1:N)
+{
+X[1,i] = e1(t[i])
+X[2,i] = e2(t[i])
+X[3,i] = e3(t[i])
+X[4,i] = e4(t[i])
+X[5,i] = e5(t[i])
+}
+</code></pre>
+
+<p>where e1(). e2(), e3(), e4() and e5() are specific functions.</p>
+
+<p>I have tried the following code:</p>
+
+<pre><code>for(j in 1:p)
+{
+for (i in 1:N)
+{
+    X[j,i] = as.symbol(paste("e", j, sep = ""))(t[i])
+}
+}
+</code></pre>
+
+<p>But it does not work.</p>
+
+<p>Thanks for your help</p>
+
+<p>Carole</p>
+
+    </div>
+    <div class="post-taglist">
+        <a href="/questions/tagged/r" class="post-tag" title="show questions tagged 'r'" rel="tag">r</a> <a href="/questions/tagged/function" class="post-tag" title="show questions tagged 'function'" rel="tag">function</a> <a href="/questions/tagged/paste" class="post-tag" title="show questions tagged 'paste'" rel="tag">paste</a> <a href="/questions/tagged/symbol" class="post-tag" title="show questions tagged 'symbol'" rel="tag">symbol</a> 
+    </div>
+    <table class="fw"><tr>
+<td class="vt">
+
+
+
+
+
+
+
+
+
+<div class="post-menu">
+<a href="/q/14915652" title="short permalink to this question" class="short-link" id="link-post-14915652">share</a><span class="lsep">|</span><a href="/posts/14915652/edit" class="suggest-edit-post" title="">improve this question</a>
+</div>            </td>
+    <td class="post-signature owner">
+        
+
+    <div class="user-info ">
+        <div class="user-action-time">
+                                    asked
+ <span title="2013-02-16 22:08:17Z" class="relativetime">13 mins ago</span>
+        </div>
+        <div class="user-gravatar32">
+            <a href="/users/2079320/carolo-kanbak"><div class=""><img src="http://www.gravatar.com/avatar/e433f84cfbcff4d1ee72b271b00d2068?s=32&amp;d=identicon&amp;r=PG" alt="" width="32" height="32"></div></a>
+        </div>
+        <div class="user-details">
+            <a href="/users/2079320/carolo-kanbak">Carolo Kanbak</a><br><span class="reputation-score" title="reputation score" dir="ltr">6</span><span title="1 bronze badge"><span class="badge3"></span><span class="badgecount">1</span></span>
+        </div>
+    </div>
+
+    </td>
+    </tr></table>
+</div>
+</td>
+        </tr>
+<tr>
+<td class="votecell"></td>
+<td>
+    <div id="comments-14915652" class="comments dno">
+        <table><tbody><tr>
+<td></td>
+<td></td>
+</tr></tbody></table>
+</div>
+    
+</td>
+</tr>
+</table>
+</div>
+
+
+    
+
+
+<div id="answers">
+
+    <a name="tab-top"></a>
+    <div id="answers-header">
+        <div class="subheader answers-subheader">
+            <h2>
+                    2 Answers
+            </h2>
+            <div id="tabs">
+                <a href="/questions/14915652/create-function-names-using-paste-in-r?answertab=active#tab-top" title="Answers with the latest activity first">active</a>
+<a href="/questions/14915652/create-function-names-using-paste-in-r?answertab=oldest#tab-top" title="Answers in the order they were provided">oldest</a>
+<a class="youarehere" href="/questions/14915652/create-function-names-using-paste-in-r?answertab=votes#tab-top" title="Answers with the highest score first">votes</a>
+
+            </div>
+        </div>    
+    </div>    
+
+
+
+
+  
+<a name="14915704"></a>
+<div id="answer-14915704" class="answer" data-answerid="14915704">
+    <table>
+<tr>
+<td class="votecell">
+                
+
+<div class="vote">
+    <input type="hidden" value="14915704"><a class="vote-up-off" title="This answer is useful (click again to undo)">up vote</a>
+    <span class="vote-count-post ">0</span>
+    <a class="vote-down-off" title="This answer is not useful (click again to undo)">down vote</a>
+    
+
+ 
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text">
+<p>One way to do it is to use <code>do.call</code> :</p>
+
+<pre><code>R&gt; myfun &lt;- function(x) print(x)
+R&gt; do.call(paste0("my","fun"), list("foo"))
+[1] "foo"
+</code></pre>
+
+<p>The first argument of <code>do.call</code> is the name of the function (you can use <code>paste</code> here), and the second one is a list of arguments to pass.</p>
+</div>
+    <table class="fw"><tr>
+<td class="vt">
+
+
+
+
+
+
+
+
+
+<div class="post-menu"><a href="/a/14915704" title="short permalink to this answer" class="short-link" id="link-post-14915704">share</a></div>                    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    
+
+    <div class="user-info ">
+        <div class="user-action-time">
+                                    answered
+ <span title="2013-02-16 22:13:41Z" class="relativetime">7 mins ago</span>
+        </div>
+        <div class="user-gravatar32">
+            <a href="/users/249691/juba"><div class=""><img src="http://www.gravatar.com/avatar/59b51627e2c3c882fa8c21022000fa11?s=32&amp;d=identicon&amp;r=PG" alt="" width="32" height="32"></div></a>
+        </div>
+        <div class="user-details">
+            <a href="/users/249691/juba">juba</a><br><span class="reputation-score" title="reputation score" dir="ltr">5,604</span><span title="12 silver badges"><span class="badge2"></span><span class="badgecount">12</span></span><span title="34 bronze badges"><span class="badge3"></span><span class="badgecount">34</span></span>
+        </div>
+    </div>
+
+    </td>
+    </tr></table>
+</td>
+        </tr>
+<tr>
+<td class="votecell"></td>
+<td>
+    <div id="comments-14915704" class="comments dno">
+        <table><tbody><tr>
+<td></td>
+<td></td>
+</tr></tbody></table>
+</div>
+    
+</td>
+</tr>
+</table>
+</div>
+        <div class="everyonelovesstackoverflow" id="adzerk3">
+        </div>
+
+
+
+  
+<a name="14915733"></a>
+<div id="answer-14915733" class="answer" data-answerid="14915733">
+    <table>
+<tr>
+<td class="votecell">
+                
+
+<div class="vote">
+    <input type="hidden" value="14915733"><a class="vote-up-off" title="This answer is useful (click again to undo)">up vote</a>
+    <span class="vote-count-post ">0</span>
+    <a class="vote-down-off" title="This answer is not useful (click again to undo)">down vote</a>
+    
+
+ 
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text">
+<p>You want the function <code>get</code></p>
+
+<pre><code>for(j in 1:p)
+{
+for (i in 1:N)
+{
+    X[j,i] = get(paste("e", j, sep = ""))(t[i])
+}
+}
+</code></pre>
+</div>
+    <table class="fw"><tr>
+<td class="vt">
+
+
+
+
+
+
+
+
+
+<div class="post-menu"><a href="/a/14915733" title="short permalink to this answer" class="short-link" id="link-post-14915733">share</a></div>                    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    
+
+    <div class="user-info user-hover">
+        <div class="user-action-time">
+                                    answered
+ <span title="2013-02-16 22:18:44Z" class="relativetime">2 mins ago</span>
+        </div>
+        <div class="user-gravatar32">
+            <a href="/users/1290634/matthew-lundberg"><div class=""><img src="http://www.gravatar.com/avatar/79ae188721e4ffc763a4c5ec16205e20?s=32&amp;d=identicon&amp;r=PG" alt="" width="32" height="32"></div></a>
+        </div>
+        <div class="user-details">
+            <a href="/users/1290634/matthew-lundberg">Matthew Lundberg</a><br><span class="reputation-score" title="reputation score" dir="ltr">6,899</span><span title="1 gold badge"><span class="badge1"></span><span class="badgecount">1</span></span><span title="6 silver badges"><span class="badge2"></span><span class="badgecount">6</span></span><span title="22 bronze badges"><span class="badge3"></span><span class="badgecount">22</span></span>
+        </div>
+    </div>
+
+    </td>
+    </tr></table>
+</td>
+        </tr>
+<tr>
+<td class="votecell"></td>
+<td>
+    <div id="comments-14915733" class="comments dno">
+        <table><tbody><tr>
+<td></td>
+<td></td>
+</tr></tbody></table>
+</div>
+    
+</td>
+</tr>
+</table>
+</div>
+    <a name="new-answer"></a>
+    <form id="post-form" action="/questions/14915652/answer/submit" method="post" class="post-form">
+        <h2 class="space">Your Answer</h2>
+
+
+
+
+<script type="text/javascript">
+    StackExchange.ready(function() {
+        initTagRenderer("".split(" "), "".split(" "));
+         
+        prepareEditor({
+            heartbeatType: 'answer',
+            bindNavPrevention: true,
+            postfix: "",
+            onDemand: true,
+            discardSelector: ".discard-answer"
+            ,immediatelyShowMarkdownHelp:true
+        });
+        
+
+    });  
+</script><div id="post-editor" class="post-editor">
+
+    <div style="position: relative;">     
+        <div class="wmd-container">
+            <div id="wmd-button-bar" class="wmd-button-bar"></div>
+            <textarea id="wmd-input" class="wmd-input" name="post-text" cols="92" rows="15" tabindex="101"></textarea>
+</div>
+    </div>
+
+    <div class="fl" style="margin-top: 8px; height:24px;"> </div>
+    <div id="draft-saved" class="draft-saved community-option fl" style="margin-top: 8px; height:24px; display:none;">draft saved</div>
+
+    <div id="draft-discarded" class="draft-discarded community-option fl" style="margin-top: 8px; height:24px; display:none;">draft discarded</div>
+
+
+
+    <div id="wmd-preview" class="wmd-preview"></div>
+    <div></div>
+    <div class="edit-block">
+        <input id="fkey" name="fkey" type="hidden" value="24c739ad32c48b16ace49616690fd26a"><input id="author" name="author" type="text">
+</div>
+</div>
+        <div style="position: relative;"> 
+    <div class="form-item">
+        <table><tr>
+<td class="vm open-id-login">
+                    <a id="login-link" style="font-size: 200%; margin-left: 30px;" href="/users/login?returnurl=%2fquestions%2f14915652%2fcreate-function-names-using-paste-in-r">log in</a>
+                    <script type="text/javascript">
+                        StackExchange.ready(function () {
+                            StackExchange.helpers.onClickDraftSave('#login-link');
+                        });
+                    </script>
+</td>
+                    <script type="text/javascript">
+                StackExchange.ready(function () {
+                    StackExchange.helpers.bindHelpOverlayEvents($('.vm input'));
+                });
+            </script><td class="orcell">
+                    <div class="orword">or</div>
+                    <div class="orline"></div>
+                </td>
+            <td class="vm">
+                    <div>
+                        <label for="display-name">Name</label>
+                        <input id="display-name" name="display-name" type="text" size="30" maxlength="30" value="" tabindex="105">
+</div>
+                <div>
+                    <label for="m-address">Email</label>
+                    <input id="m-address" name="m-address" type="text" size="40" maxlength="100" value="" tabindex="106"><span class="edit-field-overlay">required, but never shown</span>
+                </div>
+                    <div>
+                        <label for="home-page">Home Page</label>
+                        <input id="home-page" name="home-page" type="text" size="40" maxlength="200" value="" tabindex="107">
+</div>
+            </td>
+        </tr></table>
+</div>
+        </div>
+           
+            <div class="form-submit cbt">
+            <input id="submit-button" type="submit" value="Post Your Answer" tabindex="110"><a href="#" class="discard-answer dno">discard</a>
+    <p class="privacy-policy-agreement">
+        By posting your answer, you agree to the 
+        <a href="http://stackexchange.com/legal/privacy-policy" target="_blank">privacy policy</a> and 
+        <a href="http://stackexchange.com/legal/terms-of-service" target="_blank">terms of service</a>.
+    </p>
+    <input type="hidden" name="legalLinksShown" value="1">
+</div>
+    </form>
+
+
+
+        <h2 class="bottom-notice">
+                Not the answer you're looking for? 
+            Browse other questions tagged <a href="/questions/tagged/r" class="post-tag" title="show questions tagged 'r'" rel="tag">r</a> <a href="/questions/tagged/function" class="post-tag" title="show questions tagged 'function'" rel="tag">function</a> <a href="/questions/tagged/paste" class="post-tag" title="show questions tagged 'paste'" rel="tag">paste</a> <a href="/questions/tagged/symbol" class="post-tag" title="show questions tagged 'symbol'" rel="tag">symbol</a> 
+                or <a href="/questions/ask">ask your own question</a>.
+        </h2>
+</div>
+</div>
+<div id="sidebar">
+
+
+
+     <script type="text/javascript">
+        window.showNewUser = true;
+
+            
+                (function(){
+                    var cs = window.sessionStorage && window.sessionStorage['tNewsletter'];
+                    var m = /:\/\/([^\/]*)/.exec(document.referrer);
+                    var h = {'www.reddit.com':1,'news.ycombinator.com':1};
+                    if(window.sessionStorage && (cs || (m && m.length == 2 && h[m[1]]))){
+                        showNewUser = false;
+                        StackExchange.ready(function(){
+                            StackExchange.newsletterAd.loader(m[1], cs);
+                        });
+                    }
+                    if (window.localStorage && showNewUser){
+                        var c = parseInt(localStorage['nuCounter'],10); 
+                        c = isNaN(c) ? 1 : c+1;
+                        window.localStorage['nuCounter'] = c; 
+                        showNewUser = c < 10;
+                    }
+                })()
+            
+     </script><div class="module newuser newuser-greeting" id="newuser-box" style="display:none;">
+        <h4>Hello World!</h4>
+        <div>
+            <p>This is a collaboratively edited question and answer site for <b>professional and enthusiast programmers</b>. It's 100% free, no registration required.</p>
+            <p class="ar">
+                    <a href="/about?mnu=1">about »</a>   
+                <a href="/faq?mnu=1">faq »</a>
+            </p>
+        </div>
+    </div>
+     <script type="text/javascript">
+        if (showNewUser) {
+            document.getElementById('newuser-box').style.display = '';
+        }
+     </script><div class="module question-stats">
+        <p class="label-key">tagged</p>
+        <div class="tagged">
+<a href="/questions/tagged/r" class="post-tag" title="show questions tagged 'r'" rel="tag">r</a> <span class="item-multiplier"><span class="item-multiplier-x">×</span> <span class="item-multiplier-count">24105</span></span><br><a href="/questions/tagged/function" class="post-tag" title="show questions tagged 'function'" rel="tag">function</a> <span class="item-multiplier"><span class="item-multiplier-x">×</span> <span class="item-multiplier-count">15926</span></span><br><a href="/questions/tagged/paste" class="post-tag" title="show questions tagged 'paste'" rel="tag">paste</a> <span class="item-multiplier"><span class="item-multiplier-x">×</span> <span class="item-multiplier-count">418</span></span><br><a href="/questions/tagged/symbol" class="post-tag" title="show questions tagged 'symbol'" rel="tag">symbol</a> <span class="item-multiplier"><span class="item-multiplier-x">×</span> <span class="item-multiplier-count">378</span></span><br>
+</div>
+        <table id="qinfo">
+<tr>
+<td><p class="label-key">asked</p></td>
+                <td style="padding-left:10px"><p class="label-key" title="2013-02-16 22:08:17Z"><b>today</b></p></td>
+            </tr>
+<tr>
+<td><p class="label-key">viewed</p></td>
+
+                <td style="padding-left:10px">
+                    <p class="label-key">
+                        <b>10 times</b>
+                    </p>
+                </td>
+            </tr>
+<tr>
+<td><p class="label-key">active</p></td>
+                <td style="padding-left:10px"><p class="label-key"><b><a href="?lastactivity" class="lastactivity-link" title="2013-02-16 22:18:44Z">today</a></b></p></td>
+            </tr>
+</table>
+</div>
+        
+                <script type="text/javascript">
+                var scriptSrc = "http://engine.adzerk.net/z/8277/adzerk1_2_4_43,adzerk2_2_17_45,adzerk3_2_4_44?keywords=r,function,paste,symbol";
+                if (document.referrer) {
+                    if (/\?/.test(scriptSrc))
+                        scriptSrc += "&";
+                    else
+                        scriptSrc += "?";
+                    scriptSrc += "xReferrer=" + document.referrer;
+                }
+                StackExchange.ready(function () {
+                    var z = document.createElement("script");
+                    z.type = "text/javascript";
+                    z.async = "true";
+                    z.src = scriptSrc;
+                    var s = document.getElementsByTagName("script")[0];
+                    s.parentNode.insertBefore(z, s);
+                });
+            </script><div class="everyonelovesstackoverflow" id="adzerk2">
+        </div>
+    <div id="hireme">
+        <script type="text/javascript">
+            var careers_adurl="http://careers.stackoverflow.com/gethired/js",careers_cssurl="//careerscdn.sstatic.net/careers/gethired/sidebar.css?fffffffff879eaa0",careers_leaderboardcssurl="//careerscdn.sstatic.net/careers/gethired/ninja.min.css?3a635e",careers_companycssurl="//careerscdn.sstatic.net/careers/gethired/company",careers_adselector="div.hireme, div#hireme";StackExchange.ready(function(){$.ajax({url:"//careerscdn.sstatic.net/careers/gethired/loader.min.js?3a635e",dataType:"script",cache:!0})})
+        </script>
+</div>
+
+
+
+      
+    
+    <div class="module sidebar-related">
+        <h4 id="h-related">Related</h4>
+        <div class="related" data-tracker="rq=1">
+            <div class="spacer">
+<a href="/questions/4893232/loop-to-create-several-matrix-in-r-maybe-using-paste" class="question-hyperlink">loop to create several matrix in R (maybe using paste)</a>
+</div>
+<div class="spacer">
+<a href="/questions/5064846/how-to-add-variables-to-a-dataframe-using-paste" class="question-hyperlink">How to add variables to a dataframe using paste?</a>
+</div>
+<div class="spacer">
+<a href="/questions/6474922/how-to-paste-text-and-variables-into-a-logical-expression-in-r" class="question-hyperlink">How to paste text and variables into a logical expression in R?</a>
+</div>
+<div class="spacer">
+<a href="/questions/6698839/is-there-a-way-to-paste-together-the-elements-of-a-vector-in-r-without-using-a-l" class="question-hyperlink">Is there a way to paste together the elements of a vector in R without using a loop?</a>
+</div>
+<div class="spacer">
+<a href="/questions/6984796/how-to-paste-a-string-on-each-element-of-a-vector-of-strings-using-apply-in-r" class="question-hyperlink">How to paste a string on each element of a vector of strings using apply in R?</a>
+</div>
+<div class="spacer">
+<a href="/questions/7229000/pasting-jpeg-output-in-directory-in-r" class="question-hyperlink">pasting Jpeg output in directory in R</a>
+</div>
+<div class="spacer">
+<a href="/questions/7287406/paste-together-two-character-vectors-of-different-lengths" class="question-hyperlink">Paste together two character vectors of different lengths</a>
+</div>
+<div class="spacer">
+<a href="/questions/8028366/appending-or-pasting-names-to-column-names-in-r" class="question-hyperlink">appending or Pasting names to Column names in R</a>
+</div>
+<div class="spacer">
+<a href="/questions/8899577/pasting-or-merging-two-elements-of-a-column-together" class="question-hyperlink">Pasting (or merging) two elements of a column together</a>
+</div>
+<div class="spacer">
+<a href="/questions/9840509/how-to-create-a-function-for-subsetting-data-where-the-arguments-passed-to-it-va" class="question-hyperlink">How to create a function for subsetting data where the arguments passed to it vary</a>
+</div>
+<div class="spacer">
+<a href="/questions/10594841/how-to-paste-2-lists-of-equal-length-without-using-a-loop-to-form-a-new-list" class="question-hyperlink">How to paste 2 lists (of equal length) without using a loop to form a new list</a>
+</div>
+<div class="spacer">
+<a href="/questions/10907089/switching-from-standard-deviation-to-moving-average-in-a-function" class="question-hyperlink">switching from standard deviation to moving average in a function</a>
+</div>
+<div class="spacer">
+<a href="/questions/11911027/how-can-i-get-the-name-of-a-function-from-a-symbol-in-clojure" class="question-hyperlink">How can I get the name of a function from a symbol in clojure?</a>
+</div>
+<div class="spacer">
+<a href="/questions/12243071/r-keeping-0-0-when-using-paste-or-paste0" class="question-hyperlink">r keeping 0.0 when using paste or paste0</a>
+</div>
+<div class="spacer">
+<a href="/questions/12342996/paste0-build-an-argument-inside-plyrrename-now-with-update" class="question-hyperlink">paste0-build an argument inside plyr:rename (now with update)</a>
+</div>
+<div class="spacer">
+<a href="/questions/12361981/sapply-paste-before-at-beginning-of-string" class="question-hyperlink">sapply paste before at beginning of string</a>
+</div>
+<div class="spacer">
+<a href="/questions/12962984/r-prevent-repeated-items-while-using-paste-for-vectors" class="question-hyperlink">R prevent repeated items while using paste() for vectors</a>
+</div>
+<div class="spacer">
+<a href="/questions/13020591/how-to-paste-two-vectors-together-and-pad-at-the-end" class="question-hyperlink">How to paste two vectors together and pad at the end?</a>
+</div>
+<div class="spacer">
+<a href="/questions/13214508/performing-a-calculation-with-a-pasted-vector-reference" class="question-hyperlink">performing a calculation with a `paste`d vector reference</a>
+</div>
+<div class="spacer">
+<a href="/questions/13517152/pasted-variable-name-not-recognized-in-loop" class="question-hyperlink">pasted variable name not recognized in loop</a>
+</div>
+<div class="spacer">
+<a href="/questions/13673894/suppress-nas-in-paste" class="question-hyperlink">suppress NAs in paste()</a>
+</div>
+<div class="spacer">
+<a href="/questions/13825088/applying-functions-to-pasted-strings-in-r" class="question-hyperlink">applying functions to pasted strings in R</a>
+</div>
+<div class="spacer">
+<a href="/questions/14184000/concatenating-a-string-in-r-with-commas" class="question-hyperlink">concatenating a string in R with commas</a>
+</div>
+<div class="spacer">
+<a href="/questions/14270950/suppress-separator-in-paste-when-values-are-missing" class="question-hyperlink">Suppress separator in paste when values are missing</a>
+</div>
+<div class="spacer">
+<a href="/questions/14568662/paste-multiple-columns-together-in-r" class="question-hyperlink">Paste multiple columns together in R</a>
+</div>
+
+        </div>
+    </div>
+        <div class="everyonelovesstackoverflow" id="adzerk3">
+        </div>
+
+
+</div>
+
+<div id="feed-link">
+    <div id="feed-link-text"><a href="/feeds/question/14915652" title="feed of this question and its answers"><span class="feed-icon"></span>question feed</a></div>
+</div>
+<script type="text/javascript">
+StackExchange.ready(function(){$.get('/posts/14915652/ivc/87a9');});
+</script><noscript>
+    <div><img src="/posts/14915652/ivc/87a9" class="dno" alt="" width="0" height="0"></div>
+</noscript>
+<div style="display:none" id="prettify-lang">default</div>
+</div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="footerwrap">
+            <div id="footer-menu">
+                    <a href="/about">about</a> |
+                <a href="/faq">faq</a> |
+                <a href="http://blog.stackexchange.com?blb=1">blog</a> |
+                    <a href="http://chat.stackoverflow.com">chat</a> |
+                <a href="http://data.stackexchange.com">data</a> |
+                <a href="http://stackexchange.com/legal">legal</a> |
+                <a href="http://stackexchange.com/legal/privacy-policy">privacy policy</a> |
+                <a href="http://stackexchange.com/about/hiring">jobs</a> |
+                <a href="http://engine.adzerk.net/redirect/0/2776/2751/0/4de3c60f719c4dfcb1a57531c7050090/0">advertising info</a> |
+
+                <a onclick="StackExchange.switchMobile('on', '/questions/14915652/create-function-names-using-paste-in-r')">mobile</a> |
+
+                <b><a href="/help">contact us</a></b>
+                  | <b><a href="http://meta.stackoverflow.com">feedback</a></b>
+                <div id="footer-sites">
+                    
+                        <span style="color:#FE7A15;font-size:140%">■</span> <a href="http://stackoverflow.com">stackoverflow.com</a>  
+                        <span style="color:#FE7A15;font-size:140%">■</span> <a href="http://stackapps.com">api/apps</a>  
+                        <span style="color:#FE7A15;font-size:140%">■</span> <a href="http://careers.stackoverflow.com">careers 2.0</a>  
+                        <span style="color:#E8272C;font-size:140%">■</span> <a href="http://serverfault.com">serverfault.com</a>  
+                        <span style="color:#00AFEF;font-size:140%">■</span> <a href="http://superuser.com">superuser.com</a>  
+                        <span style="color:#969696;font-size:140%">■</span> <a href="http://meta.stackoverflow.com">meta</a>  
+                        <span style="color:#46937D;font-size:140%">■</span> <a href="http://area51.stackexchange.com">area 51</a>  
+                        <span style="color:#C0D0DC;font-size:140%">■</span> <a href="http://webapps.stackexchange.com">webapps</a>  
+                        <span style="color:#000000;font-size:140%">■</span> <a href="http://gaming.stackexchange.com">gaming</a>  
+                        <span style="color:#dd4814;font-size:140%">■</span> <a href="http://askubuntu.com">ubuntu</a>  
+                        <span style="color:#9ce4fe;font-size:140%">■</span> <a href="http://webmasters.stackexchange.com">webmasters</a>  
+                        <span style="color:#cf4d3f;font-size:140%">■</span> <a href="http://cooking.stackexchange.com">cooking</a>  
+                        <span style="color:#f4f28d;font-size:140%">■</span> <a href="http://gamedev.stackexchange.com">game development</a>  
+                        <span style="color:#0f3559;font-size:140%">■</span> <a href="http://math.stackexchange.com">math</a>  
+                        <span style="color:#f2f2f2;font-size:140%">■</span> <a href="http://photo.stackexchange.com">photography</a>  
+                        <span style="color:#037187;font-size:140%">■</span> <a href="http://stats.stackexchange.com">stats</a>  
+                        <span style="color:#f1e7cc;font-size:140%">■</span> <a href="http://tex.stackexchange.com">tex</a>  
+                        <span style="color:#e1cdae;font-size:140%">■</span> <a href="http://english.stackexchange.com">english</a>  
+                        <span style="color:#a2d9f6;font-size:140%">■</span> <a href="http://cstheory.stackexchange.com">theoretical cs</a>  
+                        <span style="color:#1b3e6c;font-size:140%">■</span> <a href="http://programmers.stackexchange.com">programmers</a>  
+                        <span style="color:#293a5d;font-size:140%">■</span> <a href="http://unix.stackexchange.com">unix</a> 
+                        <span style="color:#bec0cb;font-size:140%">■</span> <a href="http://apple.stackexchange.com">apple</a> 
+                        <span style="color:#939185;font-size:140%">■</span> <a href="http://wordpress.stackexchange.com">wordpress</a> 
+                        <span style="color:#ebf5f5;font-size:140%">■</span> <a href="http://physics.stackexchange.com">physics</a> 
+                        <span style="color:#4176ab;font-size:140%">■</span> <a href="http://diy.stackexchange.com">home improvement</a> 
+                        <span style="color:#d1d8d7;font-size:140%">■</span> <a href="http://gis.stackexchange.com">gis</a> 
+                        <span style="color:#e5e2d3;font-size:140%">■</span> <a href="http://electronics.stackexchange.com">electrical engineering</a> 
+                        <span style="color:#a4c639;font-size:140%">■</span> <a href="http://android.stackexchange.com">android</a> 
+                        <span style="color:#2e4e60;font-size:140%">■</span> <a href="http://security.stackexchange.com">security</a> 
+                        <span style="color:#45bcb5;font-size:140%">■</span> <a href="http://bicycles.stackexchange.com">bicycles</a> 
+                        <span style="color:#00adee;font-size:140%">■</span> <a href="http://dba.stackexchange.com">dba</a> 
+                        <span style="color:#2edaf0;font-size:140%">■</span> <a href="http://drupal.stackexchange.com">drupal</a> 
+                        <span style="color:#213951;font-size:140%">■</span> <a href="http://sharepoint.stackexchange.com">sharepoint</a> 
+                        <span style="color:#73abb3;font-size:140%">■</span> <a href="http://scifi.stackexchange.com">scifi &amp; fantasy</a> 
+                        <span style="color:#23629F;font-size:140%">■</span> <a href="http://ux.stackexchange.com">user experience</a> 
+                        <span style="color:#faff72;font-size:140%">■</span> <a href="http://skeptics.stackexchange.com">skeptics</a> 
+                        <span style="color:#623121;font-size:140%">■</span> <a href="http://rpg.stackexchange.com">rpg</a> 
+                        <span style="color:#e4be88;font-size:140%">■</span> <a href="http://judaism.stackexchange.com">judaism</a> 
+                        <span style="color:#ffecb1;font-size:140%">■</span> <a href="http://mathematica.stackexchange.com">mathematica</a> 
+                        <span style="color:#1b8598;font-size:140%">■</span> <a href="http://travel.stackexchange.com">travel</a> 
+                </div>
+            </div>
+            <div id="footer-flair">
+                <a class="peer1" href="http://www.peer1.com/stackoverflow"></a>  
+	            <a href="http://creativecommons.org/licenses/by-sa/3.0/" class="cc-wiki-link"></a>
+                <div id="svnrev">rev 2013.2.16.507</div>
+                        </div>
+            <div id="copyright">
+                site design / logo © 2013 stack exchange inc; 
+                user contributions licensed under <a href="http://creativecommons.org/licenses/by-sa/3.0/" rel="license">cc-wiki</a> with <a href="http://blog.stackoverflow.com/2009/06/attribution-required/" rel="license">attribution required</a>
+            </div>
+            
+
+        </div>
+    </div>
+    
+    <noscript>
+        <div id="noscript-warning">Stack Overflow works best with JavaScript enabled<img src="http://pixel.quantserve.com/pixel/p-c1rF4kxgLUzNc.gif" alt="" class="dno">
+</div>
+    </noscript>
+    <script type="text/javascript">var _gaq=_gaq||[];_gaq.push(['_setAccount','UA-5620270-1']);
+        _gaq.push(['_setCustomVar', 1, 'tags', '|r|function|paste|symbol|']); 
+_gaq.push(['_trackPageview']);
+    var _qevents = _qevents || [];
+    (function(){
+        var s=document.getElementsByTagName('script')[0];
+        var ga=document.createElement('script');
+        ga.type='text/javascript';
+        ga.async=true;
+        ga.src='http://www.google-analytics.com/ga.js';
+        s.parentNode.insertBefore(ga,s);
+        var sc=document.createElement('script');
+        sc.type='text/javascript';
+        sc.async=true;
+        sc.src='http://edge.quantserve.com/quant.js'; 
+        s.parentNode.insertBefore(sc,s);
+    })();
+    </script><script type="text/javascript">
+        _qevents.push({ qacct: "p-c1rF4kxgLUzNc" });
+    </script>
+</body>
+</html>
+ 

@@ -1,0 +1,3787 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>terminal - Expert R users, what's in your .Rprofile? - Stack Overflow</title>
+<link rel="shortcut icon" href="http://cdn.sstatic.net/stackoverflow/img/favicon.ico">
+<link rel="apple-touch-icon" href="http://cdn.sstatic.net/stackoverflow/img/apple-touch-icon.png">
+<link rel="search" type="application/opensearchdescription+xml" title="Stack Overflow" href="/opensearch.xml">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script><script type="text/javascript" src="http://cdn.sstatic.net/js/stub.js?v=83b912159123"></script><link rel="stylesheet" type="text/css" href="http://cdn.sstatic.net/stackoverflow/all.css?v=a5a942fb162b">
+<meta name="relativepagescore" content="247856">
+<link rel="canonical" href="http://stackoverflow.com/questions/1189759/expert-r-users-whats-in-your-rprofile">
+<script type="text/javascript">
+        
+        StackExchange.ready(function () {
+
+            
+            StackExchange.question.init({showAnswerHelp:true,totalCommentCount:0,shownCommentCount:0,highlightColor:'#F4A83D',backgroundColor:'#FFF',questionId:1189759});
+
+            styleCode();
+
+                StackExchange.realtime.subscribeToQuestion('1', '1189759');
+            
+                
+        });
+    </script><script type="text/javascript">
+        StackExchange.init({"stackAuthUrl":"https://stackauth.com","serverTime":1361079161,"styleCode":true,"enableUserHovercards":true,"site":{"name":"Stack Overflow","description":"Q&A for professional and enthusiast programmers","isNoticesTabEnabled":true,"recaptchaPublicKey":"6LdchgIAAAAAAJwGpIzRQSOFaO0pU6s44Xt8aTwc","enableSocialMediaInSharePopup":true},"user":{"fkey":"24c739ad32c48b16ace49616690fd26a","isAnonymous":true}});
+        StackExchange.using.setCacheBreakers({"js/prettify-full.js":"c862bf93b3ec","js/moderator.js":"3007e1fb015b","js/full-anon.js":"dc80e0686cda","js/full.js":"66e248812e9e","js/wmd.js":"4b43380ddaf2","js/third-party/jquery.autocomplete.min.js":"e5f01e97f7c3","js/mobile.js":"6eb68240242f","js/help.js":"fc9fb0517db2","js/tageditor.js":"450c9e8426fc","js/tageditornew.js":"f12653fbfd29","js/inline-tag-editing.js":"dd9274b70e5e","js/revisions.js":"7273bb714bba","js/review.js":"02779bd8445c","js/tagsuggestions.js":"c019341b234d","js/post-validation.js":"d303b0460fb6"});
+        
+    </script><script type="text/javascript">
+        StackExchange.using(
+            "gps",
+            function () {
+                StackExchange.gps.init(false);
+            }
+        );
+    </script>
+</head>
+<body class="question-page">
+    <noscript><div id="noscript-padding"></div></noscript>
+    <div id="notify-container"></div>
+    <div id="overlay-header"></div>
+    <div id="custom-header"></div>
+
+    <div class="container">
+        <div id="header">
+            <div id="portalLink">
+                <a class="genu" href="http://stackexchange.com" onclick="StackExchange.ready(function(){genuwine.click();});return false;">Stack Exchange</a>
+            </div>
+            <div id="topbar">
+                <div id="hlinks">
+                    
+
+
+
+
+
+
+
+
+
+<span id="hlinks-user">
+
+</span>
+<span id="hlinks-nav">
+                   <a href="/users/login?returnurl=%2fquestions%2f1189759%2fexpert-r-users-whats-in-your-rprofile">log in</a>
+
+ <span class="lsep">|</span>
+                    <a href="http://careers.stackoverflow.com">careers 2.0</a>
+
+ <span class="lsep">|</span>
+
+</span>
+<span id="hlinks-custom">
+        <a href="http://chat.stackoverflow.com">chat</a>
+
+ <span class="lsep">|</span>
+            <a href="http://meta.stackoverflow.com">meta</a>
+
+ <span class="lsep">|</span>
+        <a href="/about">about</a>
+
+ <span class="lsep">|</span>
+    <a href="/faq">faq</a>
+
+</span>
+                </div>
+                <div id="hsearch">
+                    <form id="search" action="/search" method="get" autocomplete="off">
+                    <div>
+                        <input autocomplete="off" name="q" class="textbox" placeholder="search" tabindex="1" type="text" maxlength="240" size="28" value="">
+</div>
+                    </form>
+                </div>
+            </div>
+            <br class="cbt"><div id="hlogo">
+                <a href="/">Stack Overflow</a>
+            </div>
+            <div id="hmenus">
+                <div class="nav mainnavs">
+                    <ul>
+<li class="youarehere"><a id="nav-questions" href="/questions">Questions</a></li>
+                        <li><a id="nav-tags" href="/tags">Tags</a></li>
+                        <li><a id="nav-users" href="/users">Users</a></li>
+                        <li><a id="nav-badges" href="/badges">Badges</a></li>
+                        <li><a id="nav-unanswered" href="/unanswered">Unanswered</a></li>
+                    </ul>
+</div>
+                <div class="nav askquestion">
+                    <ul>
+<li>
+                            <a id="nav-askquestion" href="/questions/ask">Ask Question</a>
+                        </li>
+                    </ul>
+</div>
+            </div>
+        </div>
+
+        
+
+
+
+        <div id="content">
+            
+
+<div itemscope itemtype="http://schema.org/Article">
+<link itemprop="image" href="http://cdn.sstatic.net/stackoverflow/img/apple-touch-icon.png">
+<div id="question-header">
+    <h1 itemprop="name"><a href="/questions/1189759/expert-r-users-whats-in-your-rprofile" class="question-hyperlink">Expert R users, what's in your .Rprofile? [closed]</a></h1>
+</div>
+<div id="mainbar">
+
+
+
+<div class="question" data-questionid="1189759" id="question">
+    
+            <div class="everyonelovesstackoverflow" id="adzerk1">
+        </div>
+
+
+    <table>
+<tr>
+<td class="votecell">
+                
+
+<div class="vote">
+    <input type="hidden" value="1189759"><a class="vote-up-off" title="This question shows research effort; it is useful and clear (click again to undo)">up vote</a>
+    <span class="vote-count-post ">95</span>
+    <a class="vote-down-off" title="This question does not show any research effort; it is unclear or not useful (click again to undo)">down vote</a>
+    
+    <a class="star-off" href="#" title="This is a favorite question (click again to undo)">favorite</a>
+    <div class="favoritecount"><b>103</b></div>   
+
+ 
+</div>
+
+            </td>
+            
+<td class="postcell">
+<div>
+    <div class="post-text" itemprop="description">
+        <p>This question is maybe a little too cute, but I have always found startup profile files of other people both useful and instructive about the language. Moreover, while I have some customization for bash and vim, I have nothing for R. For example, one thing I always wanted is different colors for input and output text in a window terminal, and maybe even syntax highlighting.</p>
+
+    </div>
+    <div class="post-taglist">
+        <a href="/questions/tagged/r" class="post-tag" title="show questions tagged 'r'" rel="tag">r</a> <a href="/questions/tagged/terminal" class="post-tag" title="show questions tagged 'terminal'" rel="tag">terminal</a> <a href="/questions/tagged/customization" class="post-tag" title="show questions tagged 'customization'" rel="tag">customization</a> <a href="/questions/tagged/rprofile" class="post-tag" title="show questions tagged 'rprofile'" rel="tag">rprofile</a> 
+    </div>
+    <table class="fw"><tr>
+<td class="vt">
+
+
+
+
+
+
+
+
+
+<div class="post-menu">
+<a href="/q/1189759" title="short permalink to this question" class="short-link" id="link-post-1189759">share</a><span class="lsep">|</span><a href="/posts/1189759/edit" class="suggest-edit-post" title="">improve this question</a>
+</div>            </td>
+    <td align="right" class="post-signature">
+
+
+    <div class="user-info ">
+        <div class="user-action-time">
+                            edited
+                             <a href="/posts/1189759/revisions" title="show all edits to this post"><span title="2011-04-12 09:35:45Z" class="relativetime">Apr 12 '11 at 9:35</span></a>
+
+        </div>
+        <div class="user-gravatar32">
+            
+        </div>
+        <div class="user-details">
+            <br>
+</div>
+    </div>
+    </td>
+    <td class="post-signature">
+        
+
+    <div class="user-info">
+        <div class="user-details">
+            <span class="community-wiki" title="This post is community owned as of Aug 20 '09 at 21:59. Votes do not generate reputation, and it can be edited by users with 100 rep">
+                community wiki
+            </span>
+        </div>
+<br><div class="user-details">
+            <a id="history-1189759" href="/posts/1189759/revisions" title="show revision history for this post">
+3 revs, 3 users 100%<br>gappy            </a>
+        </div>
+    </div>
+
+    </td>
+    </tr></table>
+</div>
+</td>
+        </tr>
+<tr>
+<td class="votecell"></td>
+<td>
+    <div id="comments-1189759" class="comments dno">
+        <table><tbody><tr>
+<td></td>
+<td></td>
+</tr></tbody></table>
+</div>
+    
+</td>
+</tr>
+</table>
+</div>
+
+
+    <div class="question-status">
+        <h2>
+<strong>closed</strong> as not constructive by <a href="/users/50776/casperone">casperOne</a><span class="mod-flair" title="moderator">♦</span> <span title="2013-02-11 14:16:32Z" class="relativetime">Feb 11 at 14:16</span>
+</h2>
+        <p>As it currently stands, this question is not a good fit for our Q&amp;A format. We expect answers to be supported by facts, references, or specific expertise, but this question will likely solicit debate, arguments, polling, or extended discussion. If you feel that this question can be improved and possibly reopened, <a href="/faq#close">see the FAQ</a> for guidance.</p>
+    </div>
+    
+
+
+<div id="answers">
+
+    <a name="tab-top"></a>
+    <div id="answers-header">
+        <div class="subheader answers-subheader">
+            <h2>
+                    25 Answers
+            </h2>
+            <div id="tabs">
+                <a href="/questions/1189759/expert-r-users-whats-in-your-rprofile?answertab=active#tab-top" title="Answers with the latest activity first">active</a>
+<a href="/questions/1189759/expert-r-users-whats-in-your-rprofile?answertab=oldest#tab-top" title="Answers in the order they were provided">oldest</a>
+<a class="youarehere" href="/questions/1189759/expert-r-users-whats-in-your-rprofile?answertab=votes#tab-top" title="Answers with the highest score first">votes</a>
+
+            </div>
+        </div>    
+    </div>    
+
+
+
+
+  
+<a name="1189826"></a>
+<div id="answer-1189826" class="answer accepted-answer" data-answerid="1189826">
+    <table>
+<tr>
+<td class="votecell">
+                
+
+<div class="vote">
+    <input type="hidden" value="1189826"><a class="vote-up-off" title="This answer is useful (click again to undo)">up vote</a>
+    <span class="vote-count-post ">31</span>
+    <a class="vote-down-off" title="This answer is not useful (click again to undo)">down vote</a>
+    
+
+            <span class="vote-accepted-on load-accepted-answer-date" title="loading when this answer was accepted...">accepted</span>
+ 
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text">
+<p>Here is mine. It won't help you with the coloring but I get that from ESS and Emacs...</p>
+
+<pre><code>options("width"=160)                # wide display with multiple monitors
+options("digits.secs"=3)            # show sub-second time stamps
+
+r &lt;- getOption("repos")             # hard code the US repo for CRAN
+r["CRAN"] &lt;- "http://cran.us.r-project.org"
+options(repos = r)
+rm(r)
+
+## put something this is your .Rprofile to customize the defaults
+setHook(packageEvent("grDevices", "onLoad"),
+        function(...) grDevices::X11.options(width=8, height=8, 
+                                             xpos=0, pointsize=10, 
+                                             #type="nbcairo"))  # Cairo device
+                                             #type="cairo"))    # other Cairo dev
+                                             type="xlib"))      # old default
+
+## from the AER book by Zeileis and Kleiber
+options(prompt="R&gt; ", digits=4, show.signif.stars=FALSE)
+
+
+options("pdfviewer"="kpdf")         # on Linux, use kpdf as the pdf viewer
+</code></pre>
+</div>
+    <table class="fw"><tr>
+<td class="vt">
+
+
+
+
+
+
+
+
+
+<div class="post-menu">
+<a href="/a/1189826" title="short permalink to this answer" class="short-link" id="link-post-1189826">share</a><span class="lsep">|</span><a href="/posts/1189826/edit" class="suggest-edit-post" title="">improve this answer</a>
+</div>                    </td>
+    <td align="right" class="post-signature">
+
+
+    <div class="user-info ">
+        <div class="user-action-time">
+                            edited
+                             <a href="/posts/1189826/revisions" title="show all edits to this post"><span title="2009-07-27 18:50:14Z" class="relativetime">Jul 27 '09 at 18:50</span></a>
+
+        </div>
+        <div class="user-gravatar32">
+            
+        </div>
+        <div class="user-details">
+            <br>
+</div>
+    </div>
+    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    
+
+    <div class="user-info">
+        <div class="user-details">
+            <span class="community-wiki" title="This post is community owned as of Aug 20 '09 at 21:59. Votes do not generate reputation, and it can be edited by users with 100 rep">
+                community wiki
+            </span>
+        </div>
+<br><div class="user-details">
+            <a id="history-1189826" href="/posts/1189826/revisions" title="show revision history for this post">
+2 revs<br>Dirk Eddelbuettel            </a>
+        </div>
+    </div>
+
+    </td>
+    </tr></table>
+</td>
+        </tr>
+<tr>
+<td class="votecell"></td>
+<td>
+    <div id="comments-1189826" class="comments">
+        <table><tbody>
+<tr id="comment-9795926" class="comment">
+<td></td>
+        <td class="comment-text"><div>
+<span class="comment-copy">I'm not sure, but I think that now X11.options has been replace by windows.options. Is that true?</span> – <a href="/users/459920/manuel-ramon" title="727 reputation" class="comment-user">Manuel Ramón</a> <span class="comment-date" dir="ltr"><span title="2011-11-04 07:17:00Z" class="relativetime-clean">Nov 4 '11 at 7:17</span></span>
+</div></td>
+    </tr>
+<tr id="comment-20755608" class="comment">
+<td></td>
+        <td class="comment-text"><div>
+<span class="comment-copy">You might want to change "kpdf" to "okular", as kpdf is gone (unless you make a link).</span> – <a href="/users/1247325/p-barill" title="51 reputation" class="comment-user">p_barill</a> <span class="comment-date" dir="ltr"><span title="2013-02-11 17:03:46Z" class="relativetime-clean">Feb 11 at 17:03</span></span>
+</div></td>
+    </tr>
+</tbody></table>
+</div>
+    
+</td>
+</tr>
+</table>
+</div>
+        <div class="everyonelovesstackoverflow" id="adzerk3">
+        </div>
+
+
+
+  
+<a name="2139002"></a>
+<div id="answer-2139002" class="answer" data-answerid="2139002">
+    <table>
+<tr>
+<td class="votecell">
+                
+
+<div class="vote">
+    <input type="hidden" value="2139002"><a class="vote-up-off" title="This answer is useful (click again to undo)">up vote</a>
+    <span class="vote-count-post ">34</span>
+    <a class="vote-down-off" title="This answer is not useful (click again to undo)">down vote</a>
+    
+
+ 
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text">
+<p>I hate to type the full words 'head', 'summary', 'names' every time, so I use aliases.</p>
+
+<p>You can put aliases into your .Rprofile file, but you have to use the full path to the function (e.g. utils::head) otherwise it won't work.</p>
+
+<pre><code># aliases
+s &lt;- base::summary
+h &lt;- utils::head
+n &lt;- base::names
+</code></pre>
+
+<p>EDIT: to answer your question, you can use the <a href="http://cran.r-project.org/web/packages/colorout/">colorout</a> package to have different colors in the terminal. Cool! :-)</p>
+</div>
+    <table class="fw"><tr>
+<td class="vt">
+
+
+
+
+
+
+
+
+
+<div class="post-menu">
+<a href="/a/2139002" title="short permalink to this answer" class="short-link" id="link-post-2139002">share</a><span class="lsep">|</span><a href="/posts/2139002/edit" class="suggest-edit-post" title="">improve this answer</a>
+</div>                    </td>
+    <td align="right" class="post-signature">
+
+
+    <div class="user-info ">
+        <div class="user-action-time">
+                            edited
+                             <a href="/posts/2139002/revisions" title="show all edits to this post"><span title="2012-03-06 11:43:17Z" class="relativetime">Mar 6 '12 at 11:43</span></a>
+
+        </div>
+        <div class="user-gravatar32">
+            
+        </div>
+        <div class="user-details">
+            <br>
+</div>
+    </div>
+    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    
+
+    <div class="user-info">
+        <div class="user-details">
+            <span class="community-wiki" title="This post is community owned as of Jan 26 '10 at 11:22. Votes do not generate reputation, and it can be edited by users with 100 rep">
+                community wiki
+            </span>
+        </div>
+<br><div class="user-details">
+            <a id="history-2139002" href="/posts/2139002/revisions" title="show revision history for this post">
+3 revs<br>dalloliogm            </a>
+        </div>
+    </div>
+
+    </td>
+    </tr></table>
+</td>
+        </tr>
+<tr>
+<td class="votecell"></td>
+<td>
+    <div id="comments-2139002" class="comments">
+        <table><tbody>
+<tr id="comment-2090695" class="comment">
+<td></td>
+        <td class="comment-text"><div>
+<span class="comment-copy">I like that. Those are three functions that I use all the time.</span> – <a href="/users/170352/brandon-bertelsen" title="9572 reputation" class="comment-user">Brandon Bertelsen</a> <span class="comment-date" dir="ltr"><span title="2010-01-27 16:31:02Z" class="relativetime-clean">Jan 27 '10 at 16:31</span></span>
+</div></td>
+    </tr>
+<tr id="comment-6222406" class="comment">
+<td class="comment-actions"><table><tbody><tr>
+<td class="comment-score">
+<span title="number of 'useful comment' votes received" class="warm">5</span>
+</td>
+<td>
+ 
+</td>
+</tr></tbody></table></td>
+        <td class="comment-text"><div>
+<span class="comment-copy">Why the <code>;</code> - R isn't C :-)</span> – <a href="/users/429846/gavin-simpson" title="46397 reputation" class="comment-user">Gavin Simpson</a> <span class="comment-date" dir="ltr"><span title="2011-03-30 12:10:20Z" class="relativetime-clean">Mar 30 '11 at 12:10</span></span>
+</div></td>
+    </tr>
+<tr id="comment-9897918" class="comment">
+<td class="comment-actions"><table><tbody><tr>
+<td class="comment-score">
+<span title="number of 'useful comment' votes received" class="cool">1</span>
+</td>
+<td>
+ 
+</td>
+</tr></tbody></table></td>
+        <td class="comment-text"><div>
+<span class="comment-copy">I think <code>n</code> would bite me, personally, in the posterior while debugging.</span> – <a href="/users/322912/roman-lustrik" title="11526 reputation" class="comment-user">Roman LuÅ¡trik</a> <span class="comment-date" dir="ltr"><span title="2011-11-10 08:55:05Z" class="relativetime-clean">Nov 10 '11 at 8:55</span></span>
+</div></td>
+    </tr>
+<tr id="comment-12948814" class="comment">
+<td class="comment-actions"><table><tbody><tr>
+<td class="comment-score">
+<span title="number of 'useful comment' votes received" class="warm">9</span>
+</td>
+<td>
+ 
+</td>
+</tr></tbody></table></td>
+        <td class="comment-text"><div>
+<span class="comment-copy">If you ever delete all objects in your global environment, then the aliases above will also be deleted.  You can prevent that by hiding these in an environment.
+
+<code>.startup &lt;- new.env()</code>
+<code>assign("h", utils::head, env=.startup)</code>
+<code>assign("n", base::names, env=.startup)</code>
+<code>assign("ht", function(d) rbind(head(d,6),tail(d,6)) , env=.startup)</code>
+<code>assign("s", base::summary, env=.startup)</code>
+<code>attach(.startup)</code></span> – <a href="/users/155151/kevin-wright" title="485 reputation" class="comment-user">Kevin Wright</a> <span class="comment-date" dir="ltr"><span title="2012-04-11 13:40:31Z" class="relativetime-clean">Apr 11 '12 at 13:40</span></span><span class="edited-yes" title="this comment was edited 5 times"></span>
+</div></td>
+    </tr>
+<tr id="comment-17120185" class="comment">
+<td class="comment-actions"><table><tbody><tr>
+<td class="comment-score">
+<span title="number of 'useful comment' votes received" class="cool">1</span>
+</td>
+<td>
+ 
+</td>
+</tr></tbody></table></td>
+        <td class="comment-text"><div>
+<span class="comment-copy">I tried this great idea, but I already used s so I did <code>sum &lt;- base::summary</code>. That <i>wasn't</i> such a great idea.</span> – <a href="/users/378085/tom" title="326 reputation" class="comment-user">Tom</a> <span class="comment-date" dir="ltr"><span title="2012-10-02 03:49:56Z" class="relativetime-clean">Oct 2 '12 at 3:49</span></span>
+</div></td>
+    </tr>
+</tbody></table>
+</div>
+    <a id="comments-link-2139002" class="comments-link" data-comments-count="3" title="expand to show all comments on this post">show <b>3</b> more comments</a>
+</td>
+</tr>
+</table>
+</div>
+
+  
+<a name="1368460"></a>
+<div id="answer-1368460" class="answer" data-answerid="1368460">
+    <table>
+<tr>
+<td class="votecell">
+                
+
+<div class="vote">
+    <input type="hidden" value="1368460"><a class="vote-up-off" title="This answer is useful (click again to undo)">up vote</a>
+    <span class="vote-count-post ">20</span>
+    <a class="vote-down-off" title="This answer is not useful (click again to undo)">down vote</a>
+    
+
+ 
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text">
+<pre><code>options(stringsAsFactors=FALSE)
+</code></pre>
+
+<p>Although I don't actually have that in my .Rprofile, because it might breaks my coauthors' code, I wish it was the default. Why?</p>
+
+<p>1) Character vectors use less memory (but only barely); </p>
+
+<p>2) More importantly, we would avoid problems such as: </p>
+
+<pre><code>&gt; x &lt;- factor(c("a","b","c"))
+&gt; x
+[1] a b c
+Levels: a b c
+&gt; x &lt;- c(x, "d")
+&gt; x
+[1] "1" "2" "3" "d"
+</code></pre>
+
+<p>and </p>
+
+<pre><code>&gt; x &lt;- factor(c("a","b","c"))
+&gt; x[1:2] &lt;- c("c", "d")
+Warning message:
+In `[&lt;-.factor`(`*tmp*`, 1:2, value = c("c", "d")) :
+  invalid factor level, NAs generated
+</code></pre>
+
+<p>Factors are great when you need them (e.g. implementing ordering in graphs) but a nuisance most of the time.</p>
+</div>
+    <table class="fw"><tr>
+<td class="vt">
+
+
+
+
+
+
+
+
+
+<div class="post-menu">
+<a href="/a/1368460" title="short permalink to this answer" class="short-link" id="link-post-1368460">share</a><span class="lsep">|</span><a href="/posts/1368460/edit" class="suggest-edit-post" title="">improve this answer</a>
+</div>                    </td>
+    <td align="right" class="post-signature">
+
+
+    <div class="user-info ">
+        <div class="user-action-time">
+                            edited
+                             <a href="/posts/1368460/revisions" title="show all edits to this post"><span title="2009-09-09 01:26:01Z" class="relativetime">Sep 9 '09 at 1:26</span></a>
+
+        </div>
+        <div class="user-gravatar32">
+            
+        </div>
+        <div class="user-details">
+            <br>
+</div>
+    </div>
+    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    
+
+    <div class="user-info">
+        <div class="user-details">
+            <span class="community-wiki" title="This post is community owned as of Sep 2 '09 at 15:38. Votes do not generate reputation, and it can be edited by users with 100 rep">
+                community wiki
+            </span>
+        </div>
+<br><div class="user-details">
+            <a id="history-1368460" href="/posts/1368460/revisions" title="show revision history for this post">
+2 revs<br>Eduardo Leoni            </a>
+        </div>
+    </div>
+
+    </td>
+    </tr></table>
+</td>
+        </tr>
+<tr>
+<td class="votecell"></td>
+<td>
+    <div id="comments-1368460" class="comments">
+        <table><tbody>
+<tr id="comment-1236352" class="comment">
+<td></td>
+        <td class="comment-text"><div>
+<span class="comment-copy">Eduardo - Interesting, what are the advantages of not using factors?</span> – <a href="/users/2002705/medriscoll" title="2100 reputation" class="comment-user">medriscoll</a> <span class="comment-date" dir="ltr"><span title="2009-09-08 18:05:58Z" class="relativetime-clean">Sep 8 '09 at 18:05</span></span>
+</div></td>
+    </tr>
+<tr id="comment-9583333" class="comment">
+<td class="comment-actions"><table><tbody><tr>
+<td class="comment-score">
+<span title="number of 'useful comment' votes received" class="cool">3</span>
+</td>
+<td>
+ 
+</td>
+</tr></tbody></table></td>
+        <td class="comment-text"><div>
+<span class="comment-copy">+1 I wish this was the default in R.</span> – <a href="/users/805808/iterator" title="8778 reputation" class="comment-user">Iterator</a> <span class="comment-date" dir="ltr"><span title="2011-10-22 03:36:26Z" class="relativetime-clean">Oct 22 '11 at 3:36</span></span>
+</div></td>
+    </tr>
+<tr id="comment-16037325" class="comment">
+<td class="comment-actions"><table><tbody><tr>
+<td class="comment-score">
+<span title="number of 'useful comment' votes received" class="cool">2</span>
+</td>
+<td>
+ 
+</td>
+</tr></tbody></table></td>
+        <td class="comment-text"><div>
+<span class="comment-copy">Note that character vectors only seem to use less memory (two hundred bytes or so) on 32-bit systems.  On 64-bit systems factors use considerably less.  <a href="https://stat.ethz.ch/pipermail/r-help/2012-August/321919.html" rel="nofollow">stat.ethz.ch/pipermail/r-help/2012-August/321919.html</a></span> – <a href="/users/636656/ari-b-friedman" title="15790 reputation" class="comment-user">Ari B. Friedman</a> <span class="comment-date" dir="ltr"><span title="2012-08-18 13:51:08Z" class="relativetime-clean">Aug 18 '12 at 13:51</span></span><span class="edited-yes" title="this comment was edited"></span>
+</div></td>
+    </tr>
+</tbody></table>
+</div>
+    
+</td>
+</tr>
+</table>
+</div>
+
+  
+<a name="1191948"></a>
+<div id="answer-1191948" class="answer" data-answerid="1191948">
+    <table>
+<tr>
+<td class="votecell">
+                
+
+<div class="vote">
+    <input type="hidden" value="1191948"><a class="vote-up-off" title="This answer is useful (click again to undo)">up vote</a>
+    <span class="vote-count-post ">18</span>
+    <a class="vote-down-off" title="This answer is not useful (click again to undo)">down vote</a>
+    
+
+ 
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text">
+<p>Here's mine.  I always use the main cran repository, and have code to make it easy to source in-development package code.</p>
+
+<pre><code>.First &lt;- function() {
+    library(graphics)
+    options("repos" = c(CRAN = "http://cran.r-project.org/"))
+    options("device" = "quartz")
+}
+
+packages &lt;- list(
+  "describedisplay" = "~/ggobi/describedisplay",
+  "linval" = "~/ggobi/linval", 
+
+  "ggplot2" =  "~/documents/ggplot/ggplot",
+  "qtpaint" =  "~/documents/cranvas/qtpaint", 
+  "tourr" =    "~/documents/tour/tourr", 
+  "tourrgui" = "~/documents/tour/tourr-gui", 
+  "prodplot" = "~/documents/categorical-grammar"
+)
+
+l &lt;- function(pkg) {
+  pkg &lt;- tolower(deparse(substitute(pkg)))
+  if (is.null(packages[[pkg]])) {
+    path &lt;- file.path("~/documents", pkg, pkg)
+  } else {
+    path &lt;- packages[pkg]
+  }
+
+  source(file.path(path, "load.r"))  
+}
+
+test &lt;- function(path) {
+  path &lt;- deparse(substitute(path))
+  source(file.path("~/documents", path, path, "test.r"))  
+}
+</code></pre>
+</div>
+    <table class="fw"><tr>
+<td class="vt">
+
+
+
+
+
+
+
+
+
+<div class="post-menu">
+<a href="/a/1191948" title="short permalink to this answer" class="short-link" id="link-post-1191948">share</a><span class="lsep">|</span><a href="/posts/1191948/edit" class="suggest-edit-post" title="">improve this answer</a>
+</div>                    </td>
+    <td align="right" class="post-signature">
+
+
+    <div class="user-info ">
+        <div class="user-action-time">
+                                    answered
+                             <a href="/posts/1191948/revisions" title="show all edits to this post"><span title="2009-07-28 04:34:51Z" class="relativetime">Jul 28 '09 at 4:34</span></a>
+
+        </div>
+        <div class="user-gravatar32">
+            
+        </div>
+        <div class="user-details">
+            <br>
+</div>
+    </div>
+    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    
+
+    <div class="user-info">
+        <div class="user-details">
+            <span class="community-wiki" title="This post is community owned as of Aug 20 '09 at 21:59. Votes do not generate reputation, and it can be edited by users with 100 rep">
+                community wiki
+            </span>
+        </div>
+<br><div class="user-details">
+            <a id="history-1191948" href="/posts/1191948/revisions" title="show revision history for this post">
+hadley            </a>
+        </div>
+    </div>
+
+    </td>
+    </tr></table>
+</td>
+        </tr>
+<tr>
+<td class="votecell"></td>
+<td>
+    <div id="comments-1191948" class="comments dno">
+        <table><tbody><tr>
+<td></td>
+<td></td>
+</tr></tbody></table>
+</div>
+    
+</td>
+</tr>
+</table>
+</div>
+
+  
+<a name="1357432"></a>
+<div id="answer-1357432" class="answer" data-answerid="1357432">
+    <table>
+<tr>
+<td class="votecell">
+                
+
+<div class="vote">
+    <input type="hidden" value="1357432"><a class="vote-up-off" title="This answer is useful (click again to undo)">up vote</a>
+    <span class="vote-count-post ">13</span>
+    <a class="vote-down-off" title="This answer is not useful (click again to undo)">down vote</a>
+    
+
+ 
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text">
+<p>I like saving my R command history and having it available each time I run R:</p>
+
+<p>In the shell or .bashrc:</p>
+
+<pre><code>export R_HISTFILE=~/.Rhistory
+</code></pre>
+
+<p>in .Rprofile:</p>
+
+<pre><code>.Last &lt;- function() {
+        if (!any(commandArgs()=='--no-readline') &amp;&amp; interactive()){
+                require(utils)
+                try(savehistory(Sys.getenv("R_HISTFILE")))
+        }
+}
+</code></pre>
+</div>
+    <table class="fw"><tr>
+<td class="vt">
+
+
+
+
+
+
+
+
+
+<div class="post-menu">
+<a href="/a/1357432" title="short permalink to this answer" class="short-link" id="link-post-1357432">share</a><span class="lsep">|</span><a href="/posts/1357432/edit" class="suggest-edit-post" title="">improve this answer</a>
+</div>                    </td>
+    <td align="right" class="post-signature">
+
+
+    <div class="user-info ">
+        <div class="user-action-time">
+                            edited
+                             <a href="/posts/1357432/revisions" title="show all edits to this post"><span title="2009-09-02 03:05:25Z" class="relativetime">Sep 2 '09 at 3:05</span></a>
+
+        </div>
+        <div class="user-gravatar32">
+            
+        </div>
+        <div class="user-details">
+            <br>
+</div>
+    </div>
+    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    
+
+    <div class="user-info">
+        <div class="user-details">
+            <span class="community-wiki" title="This post is community owned as of Aug 31 '09 at 13:18. Votes do not generate reputation, and it can be edited by users with 100 rep">
+                community wiki
+            </span>
+        </div>
+<br><div class="user-details">
+            <a id="history-1357432" href="/posts/1357432/revisions" title="show revision history for this post">
+2 revs, 2 users 65%<br>Jeff            </a>
+        </div>
+    </div>
+
+    </td>
+    </tr></table>
+</td>
+        </tr>
+<tr>
+<td class="votecell"></td>
+<td>
+    <div id="comments-1357432" class="comments dno">
+        <table><tbody><tr>
+<td></td>
+<td></td>
+</tr></tbody></table>
+</div>
+    
+</td>
+</tr>
+</table>
+</div>
+
+  
+<a name="2178357"></a>
+<div id="answer-2178357" class="answer" data-answerid="2178357">
+    <table>
+<tr>
+<td class="votecell">
+                
+
+<div class="vote">
+    <input type="hidden" value="2178357"><a class="vote-up-off" title="This answer is useful (click again to undo)">up vote</a>
+    <span class="vote-count-post ">11</span>
+    <a class="vote-down-off" title="This answer is not useful (click again to undo)">down vote</a>
+    
+
+ 
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text">
+<p>I've got this, more dynamic trick to use full terminal width, whick tries to read from the COLUMNS environment variable (on Linux):</p>
+
+<pre><code>tryCatch(
+  {options(
+      width = as.integer(Sys.getenv("COLUMNS")))},
+  error = function(err) {
+    write("Can't get your terminal width. Put ``export COLUMNS'' in your \
+           .bashrc. Or something. Setting width to 120 chars",
+           stderr());
+    options(width=120)}
+)
+</code></pre>
+
+<p>This way R will use the full width even as you resize your terminal window.</p>
+</div>
+    <table class="fw"><tr>
+<td class="vt">
+
+
+
+
+
+
+
+
+
+<div class="post-menu">
+<a href="/a/2178357" title="short permalink to this answer" class="short-link" id="link-post-2178357">share</a><span class="lsep">|</span><a href="/posts/2178357/edit" class="suggest-edit-post" title="">improve this answer</a>
+</div>                    </td>
+    <td align="right" class="post-signature">
+
+
+    <div class="user-info ">
+        <div class="user-action-time">
+                                    answered
+                             <a href="/posts/2178357/revisions" title="show all edits to this post"><span title="2010-02-01 16:42:36Z" class="relativetime">Feb 1 '10 at 16:42</span></a>
+
+        </div>
+        <div class="user-gravatar32">
+            
+        </div>
+        <div class="user-details">
+            <br>
+</div>
+    </div>
+    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    
+
+    <div class="user-info">
+        <div class="user-details">
+            <span class="community-wiki" title="This post is community owned as of Feb 1 '10 at 16:42. Votes do not generate reputation, and it can be edited by users with 100 rep">
+                community wiki
+            </span>
+        </div>
+<br><div class="user-details">
+            <a id="history-2178357" href="/posts/2178357/revisions" title="show revision history for this post">
+Branimir Dolicki            </a>
+        </div>
+    </div>
+
+    </td>
+    </tr></table>
+</td>
+        </tr>
+<tr>
+<td class="votecell"></td>
+<td>
+    <div id="comments-2178357" class="comments">
+        <table><tbody><tr id="comment-19410125" class="comment">
+<td></td>
+        <td class="comment-text"><div>
+<span class="comment-copy">When <code>COLUMNS</code> is not set, you can try <code>width = as.integer(system('tput cols',intern=TRUE)</code> as a backstop.</span> – <a href="/users/164611/shabbychef" title="557 reputation" class="comment-user">shabbychef</a> <span class="comment-date" dir="ltr"><span title="2012-12-26 23:52:54Z" class="relativetime-clean">Dec 26 '12 at 23:52</span></span>
+</div></td>
+    </tr></tbody></table>
+</div>
+    
+</td>
+</tr>
+</table>
+</div>
+
+  
+<a name="1190861"></a>
+<div id="answer-1190861" class="answer" data-answerid="1190861">
+    <table>
+<tr>
+<td class="votecell">
+                
+
+<div class="vote">
+    <input type="hidden" value="1190861"><a class="vote-up-off" title="This answer is useful (click again to undo)">up vote</a>
+    <span class="vote-count-post ">9</span>
+    <a class="vote-down-off" title="This answer is not useful (click again to undo)">down vote</a>
+    
+
+ 
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text">
+<p>Most of my personal functions and loaded libraries are in the Rfunctions.r script</p>
+
+<pre><code>source("c:\\data\\rprojects\\functions\\Rfunctions.r")
+
+
+.First &lt;- function(){
+   cat("\n Rrrr! The statistics program for Pirates !\n\n")
+
+  }
+
+  .Last &lt;- function(){
+   cat("\n Rrrr! Avast Ye, YO HO!\n\n")
+
+  }
+
+
+#===============================================================
+# Tinn-R: necessary packages
+#===============================================================
+library(utils)
+necessary = c('svIDE', 'svIO', 'svSocket', 'R2HTML')
+if(!all(necessary %in% installed.packages()[, 'Package']))
+  install.packages(c('SciViews', 'R2HTML'), dep = T)
+
+options(IDE = 'C:/Tinn-R/bin/Tinn-R.exe')
+options(use.DDE = T)
+
+library(svIDE)
+library(svIO)
+library(svSocket)
+library(R2HTML)
+guiDDEInstall()
+shell(paste("mkdir C:\\data\\rplots\\plottemp", gsub('-','',Sys.Date()), sep=""))
+pldir &lt;- paste("C:\\data\\rplots\\plottemp", gsub('-','',Sys.Date()), sep="")
+
+plot.str &lt;-c('savePlot(paste(pldir,script,"\\BeachSurveyFreq.pdf",sep=""),type="pdf")')
+</code></pre>
+</div>
+    <table class="fw"><tr>
+<td class="vt">
+
+
+
+
+
+
+
+
+
+<div class="post-menu">
+<a href="/a/1190861" title="short permalink to this answer" class="short-link" id="link-post-1190861">share</a><span class="lsep">|</span><a href="/posts/1190861/edit" class="suggest-edit-post" title="">improve this answer</a>
+</div>                    </td>
+    <td align="right" class="post-signature">
+
+
+    <div class="user-info ">
+        <div class="user-action-time">
+                                    answered
+                             <a href="/posts/1190861/revisions" title="show all edits to this post"><span title="2009-07-27 21:54:20Z" class="relativetime">Jul 27 '09 at 21:54</span></a>
+
+        </div>
+        <div class="user-gravatar32">
+            
+        </div>
+        <div class="user-details">
+            <br>
+</div>
+    </div>
+    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    
+
+    <div class="user-info">
+        <div class="user-details">
+            <span class="community-wiki" title="This post is community owned as of Aug 20 '09 at 21:59. Votes do not generate reputation, and it can be edited by users with 100 rep">
+                community wiki
+            </span>
+        </div>
+<br><div class="user-details">
+            <a id="history-1190861" href="/posts/1190861/revisions" title="show revision history for this post">
+kpierce8            </a>
+        </div>
+    </div>
+
+    </td>
+    </tr></table>
+</td>
+        </tr>
+<tr>
+<td class="votecell"></td>
+<td>
+    <div id="comments-1190861" class="comments">
+        <table><tbody>
+<tr id="comment-1014149" class="comment">
+<td></td>
+        <td class="comment-text"><div>
+<span class="comment-copy">Heh, I thought about naming an R GUI "Arrr"- this is a much easier way to add some piratey goodness.</span> – <a href="/users/135870/sharpie" title="4528 reputation" class="comment-user">Sharpie</a> <span class="comment-date" dir="ltr"><span title="2009-07-28 02:22:47Z" class="relativetime-clean">Jul 28 '09 at 2:22</span></span>
+</div></td>
+    </tr>
+<tr id="comment-1014189" class="comment">
+<td class="comment-actions"><table><tbody><tr>
+<td class="comment-score">
+<span title="number of 'useful comment' votes received" class="cool">1</span>
+</td>
+<td>
+ 
+</td>
+</tr></tbody></table></td>
+        <td class="comment-text"><div>
+<span class="comment-copy">Ah, thank you.  It's good to know I'm not the only one who thinks pirate when firing up R.  :-)  I swear I'll get over it one of these days.</span> – <a href="/users/2611/ars" title="24704 reputation" class="comment-user">ars</a> <span class="comment-date" dir="ltr"><span title="2009-07-28 02:38:56Z" class="relativetime-clean">Jul 28 '09 at 2:38</span></span>
+</div></td>
+    </tr>
+<tr id="comment-7925021" class="comment">
+<td class="comment-actions"><table><tbody><tr>
+<td class="comment-score">
+<span title="number of 'useful comment' votes received" class="cool">1</span>
+</td>
+<td>
+ 
+</td>
+</tr></tbody></table></td>
+        <td class="comment-text"><div>
+<span class="comment-copy">It explains why @Dirk was setting his hook in his script...</span> – <a href="/users/269476/james" title="13466 reputation" class="comment-user">James</a> <span class="comment-date" dir="ltr"><span title="2011-07-14 16:33:51Z" class="relativetime-clean">Jul 14 '11 at 16:33</span></span>
+</div></td>
+    </tr>
+<tr id="comment-14588309" class="comment">
+<td></td>
+        <td class="comment-text"><div>
+<span class="comment-copy">"Avast Ye" is <a href="http://en.wiktionary.org/wiki/avast#Usage_notes" rel="nofollow">non-standard Pirate</a>. I prefer my Pirate to conform to standards. Also, it means ~"hold tight", so wouldn't it make more sense at the start? :P</span> – <a href="/users/210945/naught101" title="876 reputation" class="comment-user">naught101</a> <span class="comment-date" dir="ltr"><span title="2012-06-21 03:31:53Z" class="relativetime-clean">Jun 21 '12 at 3:31</span></span><span class="edited-yes" title="this comment was edited"></span>
+</div></td>
+    </tr>
+</tbody></table>
+</div>
+    
+</td>
+</tr>
+</table>
+</div>
+
+  
+<a name="1349232"></a>
+<div id="answer-1349232" class="answer" data-answerid="1349232">
+    <table>
+<tr>
+<td class="votecell">
+                
+
+<div class="vote">
+    <input type="hidden" value="1349232"><a class="vote-up-off" title="This answer is useful (click again to undo)">up vote</a>
+    <span class="vote-count-post ">8</span>
+    <a class="vote-down-off" title="This answer is not useful (click again to undo)">down vote</a>
+    
+
+ 
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text">
+<p>Here's from my <a href="http://brenocon.com/.Rprofile">~/.Rprofile</a>, designed for Mac and Linux.</p>
+
+<p>These make errors easier to see.</p>
+
+<pre><code>options(showWarnCalls=T, showErrorCalls=T)
+</code></pre>
+
+<p>I hate the CRAN menu choice, so set to a good one.</p>
+
+<pre><code>options(repos=c("http://cran.cnr.Berkeley.edu","http://cran.stat.ucla.edu"))
+</code></pre>
+
+<p>More history!</p>
+
+<pre><code>Sys.setenv(R_HISTSIZE='100000')
+</code></pre>
+
+<p>The following is for running on Mac OSX from the terminal (which I greatly prefer to R.app because it's more stable, and you can organize your work by directory; also make sure to get a good <a href="http://brenocon.com/.inputrc">~/.inputrc</a>).  By default, you get an X11 display, which doesn't look as nice; this instead gives a quartz display same as the GUI.  The <code>if</code> statement is supposed to catch the case when you're running R from the terminal on Mac.</p>
+
+<pre><code>f = pipe("uname")
+if (.Platform$GUI == "X11" &amp;&amp; readLines(f)=="Darwin") {
+  # http://www.rforge.net/CarbonEL/
+  library("grDevices")
+  library("CarbonEL")
+  options(device='quartz')
+  Sys.unsetenv("DISPLAY")
+}
+close(f); rm(f)
+</code></pre>
+
+<p>And preload a few libraries,</p>
+
+<pre><code>library(plyr)
+library(stringr)
+library(RColorBrewer)
+if (file.exists("~/util.r")) {
+  source("~/util.r")
+}
+</code></pre>
+
+<p>where <a href="https://github.com/brendano/dlanalysis/blob/master/util.R">util.r</a> is a random bag of stuff I use, under flux.</p>
+
+<p>Also, since other people were mentioning console width, here's how I do it.</p>
+
+<pre><code>if ( (numcol &lt;-Sys.getenv("COLUMNS")) != "") {
+  numcol = as.integer(numcol)
+  options(width= numcol - 1)
+} else if (system("stty -a &amp;&gt;/dev/null") == 0) {
+  # mac specific?  probably bad in the R GUI too.
+  numcol = as.integer(sub(".* ([0-9]+) column.*", "\\1", system("stty -a", intern=T)[1]))
+  if (numcol &gt; 0)
+    options(width=  numcol - 1 )
+}
+rm(numcol)
+</code></pre>
+
+<p>This actually isn't in <code>.Rprofile</code> because you have to re-run it every time you resize the terminal window.  I have it in <code>util.r</code> then I just source it as necessary.</p>
+</div>
+    <table class="fw"><tr>
+<td class="vt">
+
+
+
+
+
+
+
+
+
+<div class="post-menu">
+<a href="/a/1349232" title="short permalink to this answer" class="short-link" id="link-post-1349232">share</a><span class="lsep">|</span><a href="/posts/1349232/edit" class="suggest-edit-post" title="">improve this answer</a>
+</div>                    </td>
+    <td align="right" class="post-signature">
+
+
+    <div class="user-info ">
+        <div class="user-action-time">
+                            edited
+                             <a href="/posts/1349232/revisions" title="show all edits to this post"><span title="2011-08-19 20:43:33Z" class="relativetime">Aug 19 '11 at 20:43</span></a>
+
+        </div>
+        <div class="user-gravatar32">
+            
+        </div>
+        <div class="user-details">
+            <br>
+</div>
+    </div>
+    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    
+
+    <div class="user-info">
+        <div class="user-details">
+            <span class="community-wiki" title="This post is community owned as of Aug 28 '09 at 20:40. Votes do not generate reputation, and it can be edited by users with 100 rep">
+                community wiki
+            </span>
+        </div>
+<br><div class="user-details">
+            <a id="history-1349232" href="/posts/1349232/revisions" title="show revision history for this post">
+3 revs<br>Brendan OConnor            </a>
+        </div>
+    </div>
+
+    </td>
+    </tr></table>
+</td>
+        </tr>
+<tr>
+<td class="votecell"></td>
+<td>
+    <div id="comments-1349232" class="comments">
+        <table><tbody>
+<tr id="comment-3548406" class="comment">
+<td></td>
+        <td class="comment-text"><div>
+<span class="comment-copy">If I open R in an xterm window (by typing "R") should it open an R gui-like window? I can't tell any difference by adding this .Rprofile to my home directory.</span> – <a href="/users/334755/richard-herron" title="2315 reputation" class="comment-user">Richard Herron</a> <span class="comment-date" dir="ltr"><span title="2010-08-04 21:51:53Z" class="relativetime-clean">Aug 4 '10 at 21:51</span></span>
+</div></td>
+    </tr>
+<tr id="comment-3559845" class="comment">
+<td></td>
+        <td class="comment-text"><div>
+<span class="comment-copy">No.  What this does is, it keeps everything in the console.  However, when you plot things, it uses a smarter display device than the default X11 display device.</span> – <a href="/users/86684/brendan-oconnor" title="1894 reputation" class="comment-user">Brendan OConnor</a> <span class="comment-date" dir="ltr"><span title="2010-08-05 23:08:19Z" class="relativetime-clean">Aug 5 '10 at 23:08</span></span>
+</div></td>
+    </tr>
+<tr id="comment-9896071" class="comment">
+<td></td>
+        <td class="comment-text"><div>
+<span class="comment-copy">I feel like these window-resizing scripts could usefully be a package. Do you agree?</span> – <a href="/users/563329/isomorphismes" title="1038 reputation" class="comment-user">isomorphismes</a> <span class="comment-date" dir="ltr"><span title="2011-11-10 05:51:39Z" class="relativetime-clean">Nov 10 '11 at 5:51</span></span>
+</div></td>
+    </tr>
+</tbody></table>
+</div>
+    
+</td>
+</tr>
+</table>
+</div>
+
+  
+<a name="1798428"></a>
+<div id="answer-1798428" class="answer" data-answerid="1798428">
+    <table>
+<tr>
+<td class="votecell">
+                
+
+<div class="vote">
+    <input type="hidden" value="1798428"><a class="vote-up-off" title="This answer is useful (click again to undo)">up vote</a>
+    <span class="vote-count-post ">7</span>
+    <a class="vote-down-off" title="This answer is not useful (click again to undo)">down vote</a>
+    
+
+ 
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text">
+<p>Thanks for the interesting post!  Here is mine.  (I stole some of the above snippets and incorporated them into my .Rprofile).  Thank you everyone for contributing.</p>
+
+<pre><code>.First &lt;- function () {
+  options(device="quartz")
+}
+
+.Last &lt;- function () {
+  if (!any(commandArgs() == '--no-readline') &amp;&amp; interactive()) {
+    require(utils)
+    try(savehistory(Sys.getenv("R_HISTFILE")))
+  }
+}
+
+# Slightly more flexible than as.Date
+# my.as.Date("2009-01-01") == my.as.Date(2009, 1, 1) == as.Date("2009-01-01")
+my.as.Date &lt;- function (a, b=NULL, c=NULL, ...) {
+  if (class(a) != "character")
+    return (as.Date(sprintf("%d-%02d-%02d", a, b, c)))
+  else
+    return (as.Date(a))
+}
+
+# Some useful aliases
+cd &lt;- setwd
+pwd &lt;- getwd
+lss &lt;- dir
+asd &lt;- my.as.Date # examples: asd("2009-01-01") == asd(2009, 1, 1) == as.Date("2009-01-01")
+last &lt;- function (x, n=1, ...) tail(x, n=n, ...)
+
+# Set proxy for all web requests
+Sys.setenv(http_proxy="http://192.168.0.200:80/")
+
+# Search RPATH for file &lt;fn&gt;.  If found, return full path to it
+search.path &lt;- function(fn, 
+     paths = strsplit(chartr("\\", "/", Sys.getenv("RPATH")), split = 
+                switch(.Platform$OS.type, windows = ";", ":"))[[1]]) { 
+  for(d in paths) 
+     if (file.exists(f &lt;- file.path(d, fn))) 
+        return(f) 
+  return(NULL) 
+} 
+
+# If loading in an environment that doesn't respect my RPATH environment
+# variable, set it here
+if (Sys.getenv("RPATH") == "") {
+  Sys.setenv(RPATH=file.path(path.expand("~"), "Library", "R", "source"))
+}
+
+# Load commonly used functions
+if (interactive())
+  source(search.path("afazio.r"))
+
+# If no R_HISTFILE environment variable, set default
+if (Sys.getenv("R_HISTFILE") == "") {
+  Sys.setenv(R_HISTFILE=file.path("~", ".Rhistory"))
+}
+
+# Override q() to not save by default.
+# Same as saying q("no")
+q &lt;- function (save="no", ...) {
+  quit(save=save, ...)
+}
+
+# ---------- My Environments ----------
+#
+# Rather than starting R from within different directories, I prefer to
+# switch my "environment" easily with these functions.  An "environment" is
+# simply a directory that contains analysis of a particular topic.
+# Example usage:
+# &gt; load.env("markets")  # Load US equity markets analysis environment
+# &gt; # ... edit some .r files in my environment
+# &gt; reload()             # Re-source .r/.R files in my environment
+#
+# On next startup of R, I will automatically be placed into the last
+# environment I entered
+
+# My current environment
+.curr.env = NULL
+
+# File contains name of the last environment I entered
+.last.env.file = file.path(path.expand("~"), ".Rlastenv")
+
+# Parent directory where all of my "environment"s are contained
+.parent.env.dir = file.path(path.expand("~"), "Analysis")
+
+# Create parent directory if it doesn't already exist
+if (!file.exists(.parent.env.dir))
+  dir.create(.parent.env.dir)
+
+load.env &lt;- function (string, save=TRUE) {
+  # Load all .r/.R files in &lt;.parent.env.dir&gt;/&lt;string&gt;/
+  cd(file.path(.parent.env.dir, string))
+  for (file in lss()) {
+    if (substr(file, nchar(file)-1, nchar(file)+1) %in% c(".r", ".R"))
+      source(file)
+  }
+  .curr.env &lt;&lt;- string
+  # Save current environment name to file
+  if (save == TRUE) writeLines(.curr.env, .last.env.file)
+  # Let user know environment switch was successful
+  print (paste(" -- in ", string, " environment -- ")) 
+}
+
+# "reload" current environment.
+reload &lt;- resource &lt;- function () {
+  if (!is.null(.curr.env))
+    load.env(.curr.env, save=FALSE)
+  else
+    print (" -- not in environment -- ")
+}
+
+# On startup, go straight to the environment I was last working in
+if (interactive() &amp;&amp; file.exists(.last.env.file)) {
+  load.env(readLines(.last.env.file))
+}
+</code></pre>
+</div>
+    <table class="fw"><tr>
+<td class="vt">
+
+
+
+
+
+
+
+
+
+<div class="post-menu">
+<a href="/a/1798428" title="short permalink to this answer" class="short-link" id="link-post-1798428">share</a><span class="lsep">|</span><a href="/posts/1798428/edit" class="suggest-edit-post" title="">improve this answer</a>
+</div>                    </td>
+    <td align="right" class="post-signature">
+
+
+    <div class="user-info ">
+        <div class="user-action-time">
+                            edited
+                             <a href="/posts/1798428/revisions" title="show all edits to this post"><span title="2009-11-25 17:18:02Z" class="relativetime">Nov 25 '09 at 17:18</span></a>
+
+        </div>
+        <div class="user-gravatar32">
+            
+        </div>
+        <div class="user-details">
+            <br>
+</div>
+    </div>
+    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    
+
+    <div class="user-info">
+        <div class="user-details">
+            <span class="community-wiki" title="This post is community owned as of Nov 25 '09 at 17:09. Votes do not generate reputation, and it can be edited by users with 100 rep">
+                community wiki
+            </span>
+        </div>
+<br><div class="user-details">
+            <a id="history-1798428" href="/posts/1798428/revisions" title="show revision history for this post">
+2 revs<br>Alfred J Fazio            </a>
+        </div>
+    </div>
+
+    </td>
+    </tr></table>
+</td>
+        </tr>
+<tr>
+<td class="votecell"></td>
+<td>
+    <div id="comments-1798428" class="comments">
+        <table><tbody>
+<tr id="comment-2098605" class="comment">
+<td class="comment-actions"><table><tbody><tr>
+<td class="comment-score">
+<span title="number of 'useful comment' votes received" class="cool">1</span>
+</td>
+<td>
+ 
+</td>
+</tr></tbody></table></td>
+        <td class="comment-text"><div>
+<span class="comment-copy">you should not post the address of your institution's proxy on a public website.</span> – <a href="/users/95048/dalloliogm" title="2193 reputation" class="comment-user">dalloliogm</a> <span class="comment-date" dir="ltr"><span title="2010-01-28 15:22:50Z" class="relativetime-clean">Jan 28 '10 at 15:22</span></span>
+</div></td>
+    </tr>
+<tr id="comment-2340934" class="comment">
+<td class="comment-actions"><table><tbody><tr>
+<td class="comment-score">
+<span title="number of 'useful comment' votes received" class="warm">6</span>
+</td>
+<td>
+ 
+</td>
+</tr></tbody></table></td>
+        <td class="comment-text"><div>
+<span class="comment-copy">dalloliogm, this is a private (non public) ip address.  There are hundreds of thousands of computers around the world with this exact same ip address.  Good luck trying to find out which one is mine!</span> – <a href="/users/218802/alfred-j-fazio" title="1 reputation" class="comment-user">Alfred J Fazio</a> <span class="comment-date" dir="ltr"><span title="2010-03-02 18:12:19Z" class="relativetime-clean">Mar 2 '10 at 18:12</span></span>
+</div></td>
+    </tr>
+<tr id="comment-4099305" class="comment">
+<td class="comment-actions"><table><tbody><tr>
+<td class="comment-score">
+<span title="number of 'useful comment' votes received" class="cool">2</span>
+</td>
+<td>
+ 
+</td>
+</tr></tbody></table></td>
+        <td class="comment-text"><div>
+<span class="comment-copy">alfred, have you found a way to define functions in .Rprofile (as you have here) without having them show up when you do an ls(), aside from naming with an initial '.'? I have too much clutter from the functions that I defined when I ls(). Thanks</span> – <a href="/users/160015/keith" title="825 reputation" class="comment-user">Keith</a> <span class="comment-date" dir="ltr"><span title="2010-10-04 14:05:16Z" class="relativetime-clean">Oct 4 '10 at 14:05</span></span>
+</div></td>
+    </tr>
+<tr id="comment-6222503" class="comment">
+<td class="comment-actions"><table><tbody><tr>
+<td class="comment-score">
+<span title="number of 'useful comment' votes received" class="cool">2</span>
+</td>
+<td>
+ 
+</td>
+</tr></tbody></table></td>
+        <td class="comment-text"><div>
+<span class="comment-copy">@Keith assign them to an environment and attach the environment to the search path, then clean up. If the functions are in a separate file, you can source directly into the environment. See <code>?new.env</code>, <code>?assign</code> and <code>?sys.source</code>. If you can't get it to work, post a new Q on SO and I'm sure you'll get Answers.</span> – <a href="/users/429846/gavin-simpson" title="46397 reputation" class="comment-user">Gavin Simpson</a> <span class="comment-date" dir="ltr"><span title="2011-03-30 12:17:23Z" class="relativetime-clean">Mar 30 '11 at 12:17</span></span>
+</div></td>
+    </tr>
+<tr id="comment-9895372" class="comment">
+<td></td>
+        <td class="comment-text"><div>
+<span class="comment-copy">Your <code>my.as.Date</code> might be superseded by the <code>Lubridate</code> package. Am I right?</span> – <a href="/users/563329/isomorphismes" title="1038 reputation" class="comment-user">isomorphismes</a> <span class="comment-date" dir="ltr"><span title="2011-11-10 04:20:25Z" class="relativetime-clean">Nov 10 '11 at 4:20</span></span><span class="edited-yes" title="this comment was edited 2 times"></span>
+</div></td>
+    </tr>
+</tbody></table>
+</div>
+    
+</td>
+</tr>
+</table>
+</div>
+
+  
+<a name="1208463"></a>
+<div id="answer-1208463" class="answer" data-answerid="1208463">
+    <table>
+<tr>
+<td class="votecell">
+                
+
+<div class="vote">
+    <input type="hidden" value="1208463"><a class="vote-up-off" title="This answer is useful (click again to undo)">up vote</a>
+    <span class="vote-count-post ">6</span>
+    <a class="vote-down-off" title="This answer is not useful (click again to undo)">down vote</a>
+    
+
+ 
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text">
+<p>Mine is not too fancy:</p>
+
+<pre><code># So the mac gui can find latex
+Sys.setenv("PATH" = paste(Sys.getenv("PATH"),"/usr/texbin",sep=":"))
+
+#Use last(x) instead of x[length(x)], works on matrices too
+last &lt;- function(x) { tail(x, n = 1) }
+
+#For tikzDevice caching 
+options( tikzMetricsDictionary='/Users/cameron/.tikzMetricsDictionary' )
+</code></pre>
+</div>
+    <table class="fw"><tr>
+<td class="vt">
+
+
+
+
+
+
+
+
+
+<div class="post-menu">
+<a href="/a/1208463" title="short permalink to this answer" class="short-link" id="link-post-1208463">share</a><span class="lsep">|</span><a href="/posts/1208463/edit" class="suggest-edit-post" title="">improve this answer</a>
+</div>                    </td>
+    <td align="right" class="post-signature">
+
+
+    <div class="user-info ">
+        <div class="user-action-time">
+                                    answered
+                             <a href="/posts/1208463/revisions" title="show all edits to this post"><span title="2009-07-30 18:30:58Z" class="relativetime">Jul 30 '09 at 18:30</span></a>
+
+        </div>
+        <div class="user-gravatar32">
+            
+        </div>
+        <div class="user-details">
+            <br>
+</div>
+    </div>
+    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    
+
+    <div class="user-info">
+        <div class="user-details">
+            <span class="community-wiki" title="This post is community owned as of Aug 20 '09 at 21:59. Votes do not generate reputation, and it can be edited by users with 100 rep">
+                community wiki
+            </span>
+        </div>
+<br><div class="user-details">
+            <a id="history-1208463" href="/posts/1208463/revisions" title="show revision history for this post">
+cameron.bracken            </a>
+        </div>
+    </div>
+
+    </td>
+    </tr></table>
+</td>
+        </tr>
+<tr>
+<td class="votecell"></td>
+<td>
+    <div id="comments-1208463" class="comments dno">
+        <table><tbody><tr>
+<td></td>
+<td></td>
+</tr></tbody></table>
+</div>
+    
+</td>
+</tr>
+</table>
+</div>
+
+  
+<a name="7107100"></a>
+<div id="answer-7107100" class="answer" data-answerid="7107100">
+    <table>
+<tr>
+<td class="votecell">
+                
+
+<div class="vote">
+    <input type="hidden" value="7107100"><a class="vote-up-off" title="This answer is useful (click again to undo)">up vote</a>
+    <span class="vote-count-post ">6</span>
+    <a class="vote-down-off" title="This answer is not useful (click again to undo)">down vote</a>
+    
+
+ 
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text">
+<p>I often have a chain of debug calls I need to call and uncommenting them can be very tedious. With the help of the <a href="http://stackoverflow.com/questions/6382286/avoiding-browser-calls-in-r">SO community</a>, I went for the following solution and inserted this into my <code>.Rprofile.site</code>. <code># BROWSER</code> is there for my Eclipse Tasks so that I have an overview of browser calls in the Task View window.</p>
+
+<pre><code># turn debugging on or off
+# place "browser(expr = isTRUE(getOption("debug"))) # BROWSER" in your function
+# and turn debugging on or off by bugon() or bugoff()
+bugon &lt;- function() options("debug" = TRUE)
+bugoff &lt;- function() options("debug" = FALSE) #pun intended
+</code></pre>
+</div>
+    <table class="fw"><tr>
+<td class="vt">
+
+
+
+
+
+
+
+
+
+<div class="post-menu">
+<a href="/a/7107100" title="short permalink to this answer" class="short-link" id="link-post-7107100">share</a><span class="lsep">|</span><a href="/posts/7107100/edit" class="suggest-edit-post" title="">improve this answer</a>
+</div>                    </td>
+    <td align="right" class="post-signature">
+
+
+    <div class="user-info ">
+        <div class="user-action-time">
+                            edited
+                             <a href="/posts/7107100/revisions" title="show all edits to this post"><span title="2011-08-18 12:10:52Z" class="relativetime">Aug 18 '11 at 12:10</span></a>
+
+        </div>
+        <div class="user-gravatar32">
+            
+        </div>
+        <div class="user-details">
+            <br>
+</div>
+    </div>
+    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    
+
+    <div class="user-info">
+        <div class="user-details">
+            <span class="community-wiki" title="This post is community owned as of Aug 18 '11 at 12:02. Votes do not generate reputation, and it can be edited by users with 100 rep">
+                community wiki
+            </span>
+        </div>
+<br><div class="user-details">
+            <a id="history-7107100" href="/posts/7107100/revisions" title="show revision history for this post">
+Roman LuÅ¡trik            </a>
+        </div>
+    </div>
+
+    </td>
+    </tr></table>
+</td>
+        </tr>
+<tr>
+<td class="votecell"></td>
+<td>
+    <div id="comments-7107100" class="comments dno">
+        <table><tbody><tr>
+<td></td>
+<td></td>
+</tr></tbody></table>
+</div>
+    
+</td>
+</tr>
+</table>
+</div>
+
+  
+<a name="4951004"></a>
+<div id="answer-4951004" class="answer" data-answerid="4951004">
+    <table>
+<tr>
+<td class="votecell">
+                
+
+<div class="vote">
+    <input type="hidden" value="4951004"><a class="vote-up-off" title="This answer is useful (click again to undo)">up vote</a>
+    <span class="vote-count-post ">5</span>
+    <a class="vote-down-off" title="This answer is not useful (click again to undo)">down vote</a>
+    
+
+ 
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text">
+<pre><code>sink(file = 'R.log', split=T)
+
+options(scipen=5)
+
+.ls.objects &lt;- function (pos = 1, pattern, order.by = "Size", decreasing=TRUE, head =     TRUE, n = 10) {
+  # based on postings by Petr Pikal and David Hinds to the r-help list in 2004
+  # modified by: Dirk Eddelbuettel (http://stackoverflow.com/questions/1358003/tricks-to-    manage-the-available-memory-in-an-r-session) 
+  # I then gave it a few tweaks (show size as megabytes and use defaults that I like)
+  # a data frame of the objects and their associated storage needs.
+  napply &lt;- function(names, fn) sapply(names, function(x)
+          fn(get(x, pos = pos)))
+  names &lt;- ls(pos = pos, pattern = pattern)
+  obj.class &lt;- napply(names, function(x) as.character(class(x))[1])
+  obj.mode &lt;- napply(names, mode)
+  obj.type &lt;- ifelse(is.na(obj.class), obj.mode, obj.class)
+  obj.size &lt;- napply(names, object.size) / 10^6 # megabytes
+  obj.dim &lt;- t(napply(names, function(x)
+            as.numeric(dim(x))[1:2]))
+  vec &lt;- is.na(obj.dim)[, 1] &amp; (obj.type != "function")
+  obj.dim[vec, 1] &lt;- napply(names, length)[vec]
+  out &lt;- data.frame(obj.type, obj.size, obj.dim)
+  names(out) &lt;- c("Type", "Size", "Rows", "Columns")
+  out &lt;- out[order(out[[order.by]], decreasing=decreasing), ]
+  if (head)
+    out &lt;- head(out, n)
+  out
+}
+</code></pre>
+</div>
+    <table class="fw"><tr>
+<td class="vt">
+
+
+
+
+
+
+
+
+
+<div class="post-menu">
+<a href="/a/4951004" title="short permalink to this answer" class="short-link" id="link-post-4951004">share</a><span class="lsep">|</span><a href="/posts/4951004/edit" class="suggest-edit-post" title="">improve this answer</a>
+</div>                    </td>
+    <td align="right" class="post-signature">
+
+
+    <div class="user-info ">
+        <div class="user-action-time">
+                            edited
+                             <a href="/posts/4951004/revisions" title="show all edits to this post"><span title="2011-02-09 22:11:51Z" class="relativetime">Feb 9 '11 at 22:11</span></a>
+
+        </div>
+        <div class="user-gravatar32">
+            
+        </div>
+        <div class="user-details">
+            <br>
+</div>
+    </div>
+    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    
+
+    <div class="user-info">
+        <div class="user-details">
+            <span class="community-wiki" title="This post is community owned as of Feb 9 '11 at 21:57. Votes do not generate reputation, and it can be edited by users with 100 rep">
+                community wiki
+            </span>
+        </div>
+<br><div class="user-details">
+            <a id="history-4951004" href="/posts/4951004/revisions" title="show revision history for this post">
+2 revs<br>Patrick McCann            </a>
+        </div>
+    </div>
+
+    </td>
+    </tr></table>
+</td>
+        </tr>
+<tr>
+<td class="votecell"></td>
+<td>
+    <div id="comments-4951004" class="comments">
+        <table><tbody>
+<tr id="comment-5522872" class="comment">
+<td></td>
+        <td class="comment-text"><div>
+<span class="comment-copy">This is unreadable.</span> – <a href="/users/573546/j-winchester" title="1407 reputation" class="comment-user">J. Winchester</a> <span class="comment-date" dir="ltr"><span title="2011-02-09 22:05:35Z" class="relativetime-clean">Feb 9 '11 at 22:05</span></span>
+</div></td>
+    </tr>
+<tr id="comment-5522967" class="comment">
+<td></td>
+        <td class="comment-text"><div>
+<span class="comment-copy">fixed it with the four spaces thing</span> – <a href="/users/404817/patrick-mccann" title="297 reputation" class="comment-user">Patrick McCann</a> <span class="comment-date" dir="ltr"><span title="2011-02-09 22:12:30Z" class="relativetime-clean">Feb 9 '11 at 22:12</span></span>
+</div></td>
+    </tr>
+</tbody></table>
+</div>
+    
+</td>
+</tr>
+</table>
+</div>
+
+  
+<a name="7850451"></a>
+<div id="answer-7850451" class="answer" data-answerid="7850451">
+    <table>
+<tr>
+<td class="votecell">
+                
+
+<div class="vote">
+    <input type="hidden" value="7850451"><a class="vote-up-off" title="This answer is useful (click again to undo)">up vote</a>
+    <span class="vote-count-post ">5</span>
+    <a class="vote-down-off" title="This answer is not useful (click again to undo)">down vote</a>
+    
+
+ 
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text">
+<p>I use the following to get cacheSweave (or pgfSweave) to work with the "Compile PDF" button in RStudio:</p>
+
+<pre><code>library(cacheSweave)
+assignInNamespace("RweaveLatex", cacheSweave::cacheSweaveDriver, "utils")
+</code></pre>
+</div>
+    <table class="fw"><tr>
+<td class="vt">
+
+
+
+
+
+
+
+
+
+<div class="post-menu">
+<a href="/a/7850451" title="short permalink to this answer" class="short-link" id="link-post-7850451">share</a><span class="lsep">|</span><a href="/posts/7850451/edit" class="suggest-edit-post" title="">improve this answer</a>
+</div>                    </td>
+    <td align="right" class="post-signature">
+
+
+    <div class="user-info ">
+        <div class="user-action-time">
+                                    answered
+                             <a href="/posts/7850451/revisions" title="show all edits to this post"><span title="2011-10-21 13:58:34Z" class="relativetime">Oct 21 '11 at 13:58</span></a>
+
+        </div>
+        <div class="user-gravatar32">
+            
+        </div>
+        <div class="user-details">
+            <br>
+</div>
+    </div>
+    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    
+
+    <div class="user-info">
+        <div class="user-details">
+            <span class="community-wiki" title="This post is community owned as of Oct 21 '11 at 13:58. Votes do not generate reputation, and it can be edited by users with 100 rep">
+                community wiki
+            </span>
+        </div>
+<br><div class="user-details">
+            <a id="history-7850451" href="/posts/7850451/revisions" title="show revision history for this post">
+ROLO            </a>
+        </div>
+    </div>
+
+    </td>
+    </tr></table>
+</td>
+        </tr>
+<tr>
+<td class="votecell"></td>
+<td>
+    <div id="comments-7850451" class="comments dno">
+        <table><tbody><tr>
+<td></td>
+<td></td>
+</tr></tbody></table>
+</div>
+    
+</td>
+</tr>
+</table>
+</div>
+
+  
+<a name="3332689"></a>
+<div id="answer-3332689" class="answer" data-answerid="3332689">
+    <table>
+<tr>
+<td class="votecell">
+                
+
+<div class="vote">
+    <input type="hidden" value="3332689"><a class="vote-up-off" title="This answer is useful (click again to undo)">up vote</a>
+    <span class="vote-count-post ">4</span>
+    <a class="vote-down-off" title="This answer is not useful (click again to undo)">down vote</a>
+    
+
+ 
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text">
+<pre><code>setwd("C://path//to//my//prefered//working//directory")
+library("ggplot2")
+library("RMySQL")
+library("foreign")
+answer &lt;- readline("What database would you like to connect to? ")
+con &lt;- dbConnect(MySQL(),user="root",password="mypass", dbname=answer)
+</code></pre>
+
+<p>I do a lot of work from mysql databases, so connecting right away is a godsend. I only wish there was a way of listing the avaialble databases so I wouldn't have to remember all the different names. </p>
+</div>
+    <table class="fw"><tr>
+<td class="vt">
+
+
+
+
+
+
+
+
+
+<div class="post-menu">
+<a href="/a/3332689" title="short permalink to this answer" class="short-link" id="link-post-3332689">share</a><span class="lsep">|</span><a href="/posts/3332689/edit" class="suggest-edit-post" title="">improve this answer</a>
+</div>                    </td>
+    <td align="right" class="post-signature">
+
+
+    <div class="user-info ">
+        <div class="user-action-time">
+                                    answered
+                             <a href="/posts/3332689/revisions" title="show all edits to this post"><span title="2010-07-26 06:35:42Z" class="relativetime">Jul 26 '10 at 6:35</span></a>
+
+        </div>
+        <div class="user-gravatar32">
+            
+        </div>
+        <div class="user-details">
+            <br>
+</div>
+    </div>
+    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    
+
+    <div class="user-info">
+        <div class="user-details">
+            <span class="community-wiki" title="This post is community owned as of Jul 26 '10 at 6:35. Votes do not generate reputation, and it can be edited by users with 100 rep">
+                community wiki
+            </span>
+        </div>
+<br><div class="user-details">
+            <a id="history-3332689" href="/posts/3332689/revisions" title="show revision history for this post">
+Brandon Bertelsen            </a>
+        </div>
+    </div>
+
+    </td>
+    </tr></table>
+</td>
+        </tr>
+<tr>
+<td class="votecell"></td>
+<td>
+    <div id="comments-3332689" class="comments">
+        <table><tbody><tr id="comment-3457088" class="comment">
+<td></td>
+        <td class="comment-text"><div>
+<span class="comment-copy">silly me dbGetQuery(con, "show databases;")</span> – <a href="/users/170352/brandon-bertelsen" title="9572 reputation" class="comment-user">Brandon Bertelsen</a> <span class="comment-date" dir="ltr"><span title="2010-07-26 06:43:32Z" class="relativetime-clean">Jul 26 '10 at 6:43</span></span>
+</div></td>
+    </tr></tbody></table>
+</div>
+    
+</td>
+</tr>
+</table>
+</div>
+
+  
+<a name="12703931"></a>
+<div id="answer-12703931" class="answer" data-answerid="12703931">
+    <table>
+<tr>
+<td class="votecell">
+                
+
+<div class="vote">
+    <input type="hidden" value="12703931"><a class="vote-up-off" title="This answer is useful (click again to undo)">up vote</a>
+    <span class="vote-count-post ">4</span>
+    <a class="vote-down-off" title="This answer is not useful (click again to undo)">down vote</a>
+    
+
+ 
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text">
+<p>Here are two functions I find handy for working with windows.</p>
+
+<p>The first converts the <code>\</code>s to <code>/</code>.</p>
+
+<pre><code>.repath &lt;- function() {
+   cat('Paste windows file path and hit RETURN twice')
+   x &lt;- scan(what = "")
+   xa &lt;- gsub('\\\\', '/', x)
+   writeClipboard(paste(xa, collapse=" "))
+   cat('Here\'s your de-windowsified path. (It\'s also on the clipboard.)\n', xa, '\n')
+ }
+</code></pre>
+
+<p>The second opens the working directory in a new explorer window.</p>
+
+<pre><code>getw &lt;- function() {
+    suppressWarnings(shell(paste("explorer",  gsub('/', '\\\\', getwd()))))
+}
+</code></pre>
+</div>
+    <table class="fw"><tr>
+<td class="vt">
+
+
+
+
+
+
+
+
+
+<div class="post-menu">
+<a href="/a/12703931" title="short permalink to this answer" class="short-link" id="link-post-12703931">share</a><span class="lsep">|</span><a href="/posts/12703931/edit" class="suggest-edit-post" title="">improve this answer</a>
+</div>                    </td>
+    <td align="right" class="post-signature">
+
+
+    <div class="user-info ">
+        <div class="user-action-time">
+                                    answered
+                             <a href="/posts/12703931/revisions" title="show all edits to this post"><span title="2012-10-03 07:38:14Z" class="relativetime">Oct 3 '12 at 7:38</span></a>
+
+        </div>
+        <div class="user-gravatar32">
+            
+        </div>
+        <div class="user-details">
+            <br>
+</div>
+    </div>
+    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    
+
+    <div class="user-info">
+        <div class="user-details">
+            <span class="community-wiki" title="This post is community owned as of Oct 3 '12 at 7:38. Votes do not generate reputation, and it can be edited by users with 100 rep">
+                community wiki
+            </span>
+        </div>
+<br><div class="user-details">
+            <a id="history-12703931" href="/posts/12703931/revisions" title="show revision history for this post">
+Tom            </a>
+        </div>
+    </div>
+
+    </td>
+    </tr></table>
+</td>
+        </tr>
+<tr>
+<td class="votecell"></td>
+<td>
+    <div id="comments-12703931" class="comments dno">
+        <table><tbody><tr>
+<td></td>
+<td></td>
+</tr></tbody></table>
+</div>
+    
+</td>
+</tr>
+</table>
+</div>
+
+  
+<a name="2563848"></a>
+<div id="answer-2563848" class="answer" data-answerid="2563848">
+    <table>
+<tr>
+<td class="votecell">
+                
+
+<div class="vote">
+    <input type="hidden" value="2563848"><a class="vote-up-off" title="This answer is useful (click again to undo)">up vote</a>
+    <span class="vote-count-post ">3</span>
+    <a class="vote-down-off" title="This answer is not useful (click again to undo)">down vote</a>
+    
+
+ 
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text">
+<p>I have an environment variable R_USER_WORKSPACE which points to the top directory of my packages. In .Rprofile I define a function devlib which sets the working directory (so that data() works) and sources all .R files in the R subdirectory. It is quite similar to Hadley's l() function above.</p>
+
+<pre><code>devlib &lt;- function(pkg) {
+  setwd(file.path(Sys.getenv("R_USER_WORKSPACE", "."), deparse(substitute(pkg)), "dev"))
+  sapply(list.files("R", pattern=".r$", ignore.case=TRUE, full.names=TRUE), source)
+  invisible(NULL)
+}
+
+.First &lt;- function() {
+  setwd(Sys.getenv("R_USER_WORKSPACE", "."))
+  options("repos" = c(CRAN = "http://mirrors.softliste.de/cran/", CRANextra="http://www.stats.ox.ac.uk/pub/RWin"))
+}
+
+.Last &lt;- function() update.packages(ask="graphics")
+</code></pre>
+</div>
+    <table class="fw"><tr>
+<td class="vt">
+
+
+
+
+
+
+
+
+
+<div class="post-menu">
+<a href="/a/2563848" title="short permalink to this answer" class="short-link" id="link-post-2563848">share</a><span class="lsep">|</span><a href="/posts/2563848/edit" class="suggest-edit-post" title="">improve this answer</a>
+</div>                    </td>
+    <td align="right" class="post-signature">
+
+
+    <div class="user-info ">
+        <div class="user-action-time">
+                            edited
+                             <a href="/posts/2563848/revisions" title="show all edits to this post"><span title="2010-04-03 18:35:14Z" class="relativetime">Apr 3 '10 at 18:35</span></a>
+
+        </div>
+        <div class="user-gravatar32">
+            
+        </div>
+        <div class="user-details">
+            <br>
+</div>
+    </div>
+    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    
+
+    <div class="user-info">
+        <div class="user-details">
+            <span class="community-wiki" title="This post is community owned as of Apr 1 '10 at 21:35. Votes do not generate reputation, and it can be edited by users with 100 rep">
+                community wiki
+            </span>
+        </div>
+<br><div class="user-details">
+            <a id="history-2563848" href="/posts/2563848/revisions" title="show revision history for this post">
+2 revs<br>Karsten W.            </a>
+        </div>
+    </div>
+
+    </td>
+    </tr></table>
+</td>
+        </tr>
+<tr>
+<td class="votecell"></td>
+<td>
+    <div id="comments-2563848" class="comments dno">
+        <table><tbody><tr>
+<td></td>
+<td></td>
+</tr></tbody></table>
+</div>
+    
+</td>
+</tr>
+</table>
+</div>
+
+  
+<a name="8676073"></a>
+<div id="answer-8676073" class="answer" data-answerid="8676073">
+    <table>
+<tr>
+<td class="votecell">
+                
+
+<div class="vote">
+    <input type="hidden" value="8676073"><a class="vote-up-off" title="This answer is useful (click again to undo)">up vote</a>
+    <span class="vote-count-post ">3</span>
+    <a class="vote-down-off" title="This answer is not useful (click again to undo)">down vote</a>
+    
+
+ 
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text">
+<p><a href="http://gettinggeneticsdone.blogspot.com/2011/08/sync-your-rprofile-across-multiple-r.html" rel="nofollow">Stephen Turner's post</a> on .Rprofiles has several useful aliases and starter functions.</p>
+
+<p>I find myself using his ht and hh often.</p>
+
+<pre><code>#ht==headtail, i.e., show the first and last 10 items of an object
+ht &lt;- function(d) rbind(head(d,10),tail(d,10))
+
+# Show the first 5 rows and first 5 columns of a data frame or matrix
+hh &lt;- function(d) d[1:5,1:5]
+</code></pre>
+</div>
+    <table class="fw"><tr>
+<td class="vt">
+
+
+
+
+
+
+
+
+
+<div class="post-menu">
+<a href="/a/8676073" title="short permalink to this answer" class="short-link" id="link-post-8676073">share</a><span class="lsep">|</span><a href="/posts/8676073/edit" class="suggest-edit-post" title="">improve this answer</a>
+</div>                    </td>
+    <td align="right" class="post-signature">
+
+
+    <div class="user-info ">
+        <div class="user-action-time">
+                                    answered
+                             <a href="/posts/8676073/revisions" title="show all edits to this post"><span title="2011-12-30 04:08:54Z" class="relativetime">Dec 30 '11 at 4:08</span></a>
+
+        </div>
+        <div class="user-gravatar32">
+            
+        </div>
+        <div class="user-details">
+            <br>
+</div>
+    </div>
+    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    
+
+    <div class="user-info">
+        <div class="user-details">
+            <span class="community-wiki" title="This post is community owned as of Dec 30 '11 at 4:08. Votes do not generate reputation, and it can be edited by users with 100 rep">
+                community wiki
+            </span>
+        </div>
+<br><div class="user-details">
+            <a id="history-8676073" href="/posts/8676073/revisions" title="show revision history for this post">
+Ram Narasimhan            </a>
+        </div>
+    </div>
+
+    </td>
+    </tr></table>
+</td>
+        </tr>
+<tr>
+<td class="votecell"></td>
+<td>
+    <div id="comments-8676073" class="comments dno">
+        <table><tbody><tr>
+<td></td>
+<td></td>
+</tr></tbody></table>
+</div>
+    
+</td>
+</tr>
+</table>
+</div>
+
+  
+<a name="13046065"></a>
+<div id="answer-13046065" class="answer" data-answerid="13046065">
+    <table>
+<tr>
+<td class="votecell">
+                
+
+<div class="vote">
+    <input type="hidden" value="13046065"><a class="vote-up-off" title="This answer is useful (click again to undo)">up vote</a>
+    <span class="vote-count-post ">3</span>
+    <a class="vote-down-off" title="This answer is not useful (click again to undo)">down vote</a>
+    
+
+ 
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text">
+<p>Make data.frames display somewhat like 'head', only without having to type 'head'</p>
+
+<pre><code>print.data.frame &lt;- function(df) {
+   if (nrow(df) &gt; 10) {
+      base::print.data.frame(head(df, 5))
+      cat("----\n")
+      base::print.data.frame(tail(df, 5))
+   } else {
+      base::print.data.frame(df)
+   }
+}
+</code></pre>
+
+<p>(From <a href="http://stackoverflow.com/questions/13024167/how-to-make-head-be-applied-automatically-to-output">How to make 'head' be applied automatically to output?</a> )</p>
+</div>
+    <table class="fw"><tr>
+<td class="vt">
+
+
+
+
+
+
+
+
+
+<div class="post-menu">
+<a href="/a/13046065" title="short permalink to this answer" class="short-link" id="link-post-13046065">share</a><span class="lsep">|</span><a href="/posts/13046065/edit" class="suggest-edit-post" title="">improve this answer</a>
+</div>                    </td>
+    <td align="right" class="post-signature">
+
+
+    <div class="user-info ">
+        <div class="user-action-time">
+                                    answered
+                             <a href="/posts/13046065/revisions" title="show all edits to this post"><span title="2012-10-24 09:07:44Z" class="relativetime">Oct 24 '12 at 9:07</span></a>
+
+        </div>
+        <div class="user-gravatar32">
+            
+        </div>
+        <div class="user-details">
+            <br>
+</div>
+    </div>
+    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    
+
+    <div class="user-info">
+        <div class="user-details">
+            <span class="community-wiki" title="This post is community owned as of Oct 24 '12 at 9:07. Votes do not generate reputation, and it can be edited by users with 100 rep">
+                community wiki
+            </span>
+        </div>
+<br><div class="user-details">
+            <a id="history-13046065" href="/posts/13046065/revisions" title="show revision history for this post">
+Hugh Perkins            </a>
+        </div>
+    </div>
+
+    </td>
+    </tr></table>
+</td>
+        </tr>
+<tr>
+<td class="votecell"></td>
+<td>
+    <div id="comments-13046065" class="comments dno">
+        <table><tbody><tr>
+<td></td>
+<td></td>
+</tr></tbody></table>
+</div>
+    
+</td>
+</tr>
+</table>
+</div>
+
+  
+<a name="1267104"></a>
+<div id="answer-1267104" class="answer" data-answerid="1267104">
+    <table>
+<tr>
+<td class="votecell">
+                
+
+<div class="vote">
+    <input type="hidden" value="1267104"><a class="vote-up-off" title="This answer is useful (click again to undo)">up vote</a>
+    <span class="vote-count-post ">2</span>
+    <a class="vote-down-off" title="This answer is not useful (click again to undo)">down vote</a>
+    
+
+ 
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text">
+<p>I set my lattice color theme in my profile.  Here are two other tweaks I use:</p>
+
+<pre><code># Display working directory in the titlebar
+# Note: This causes demo(graphics) to fail
+utils::setWindowTitle(base::getwd())
+utils::assignInNamespace("setwd",function(dir)   {.Internal(setwd(dir));setWindowTitle(base::getwd())},"base")
+
+# Don't print more than 1000 lines
+options(max.print=2000)
+</code></pre>
+</div>
+    <table class="fw"><tr>
+<td class="vt">
+
+
+
+
+
+
+
+
+
+<div class="post-menu">
+<a href="/a/1267104" title="short permalink to this answer" class="short-link" id="link-post-1267104">share</a><span class="lsep">|</span><a href="/posts/1267104/edit" class="suggest-edit-post" title="">improve this answer</a>
+</div>                    </td>
+    <td align="right" class="post-signature">
+
+
+    <div class="user-info ">
+        <div class="user-action-time">
+                                    answered
+                             <a href="/posts/1267104/revisions" title="show all edits to this post"><span title="2009-08-12 15:55:15Z" class="relativetime">Aug 12 '09 at 15:55</span></a>
+
+        </div>
+        <div class="user-gravatar32">
+            
+        </div>
+        <div class="user-details">
+            <br>
+</div>
+    </div>
+    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    
+
+    <div class="user-info">
+        <div class="user-details">
+            <span class="community-wiki" title="This post is community owned as of Aug 20 '09 at 21:59. Votes do not generate reputation, and it can be edited by users with 100 rep">
+                community wiki
+            </span>
+        </div>
+<br><div class="user-details">
+            <a id="history-1267104" href="/posts/1267104/revisions" title="show revision history for this post">
+Kevin Wright            </a>
+        </div>
+    </div>
+
+    </td>
+    </tr></table>
+</td>
+        </tr>
+<tr>
+<td class="votecell"></td>
+<td>
+    <div id="comments-1267104" class="comments">
+        <table><tbody><tr id="comment-7058369" class="comment">
+<td class="comment-actions"><table><tbody><tr>
+<td class="comment-score">
+<span title="number of 'useful comment' votes received" class="cool">1</span>
+</td>
+<td>
+ 
+</td>
+</tr></tbody></table></td>
+        <td class="comment-text"><div>
+<span class="comment-copy">This <code>setwd</code> replacement will work better in version: <code>utils::assignInNamespace("setwd",function(dir) {on.exit(setWindowTitle(base::getwd())); .Internal(setwd(dir))}, "base")</code></span> – <a href="/users/168747/marek" title="11491 reputation" class="comment-user">Marek</a> <span class="comment-date" dir="ltr"><span title="2011-05-22 20:29:25Z" class="relativetime-clean">May 22 '11 at 20:29</span></span>
+</div></td>
+    </tr></tbody></table>
+</div>
+    
+</td>
+</tr>
+</table>
+</div>
+
+  
+<a name="4439198"></a>
+<div id="answer-4439198" class="answer" data-answerid="4439198">
+    <table>
+<tr>
+<td class="votecell">
+                
+
+<div class="vote">
+    <input type="hidden" value="4439198"><a class="vote-up-off" title="This answer is useful (click again to undo)">up vote</a>
+    <span class="vote-count-post ">2</span>
+    <a class="vote-down-off" title="This answer is not useful (click again to undo)">down vote</a>
+    
+
+ 
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text">
+<p>Here's mine, including some of the mentioned ideas.</p>
+
+<p>Two things you might want to look at: </p>
+
+<ul>
+<li>.set.width() / w() update your print width to the one of the terminal. Unfortunately I did not find a way to do this automatically on terminal resize - R documentation mentions this is done by some R interpreters.</li>
+<li>history is saved every time together with a timestamp and the working directory</li>
+</ul>
+<p>.</p>
+
+<pre><code>.set.width &lt;- function() {
+  cols &lt;- as.integer(Sys.getenv("COLUMNS"))
+  if (is.na(cols) || cols &gt; 10000 || cols &lt; 10)
+    options(width=100)
+  options(width=cols)
+}
+
+.First &lt;- function() {
+  options(digits.secs=3)              # show sub-second time stamps
+  options(max.print=1000)             # do not print more than 1000 lines
+  options("report" = c(CRAN="http://cran.at.r-project.org"))
+  options(prompt="R&gt; ", digits=4, show.signif.stars=FALSE)
+}
+
+# aliases
+w &lt;- .set.width
+
+.Last &lt;- function() {
+  if (!any(commandArgs()=='--no-readline') &amp;&amp; interactive()){
+    timestamp(,prefix=paste("##------ [",getwd(),"] ",sep=""))
+    try(savehistory("~/.Rhistory"))
+   }
+}
+</code></pre>
+</div>
+    <table class="fw"><tr>
+<td class="vt">
+
+
+
+
+
+
+
+
+
+<div class="post-menu">
+<a href="/a/4439198" title="short permalink to this answer" class="short-link" id="link-post-4439198">share</a><span class="lsep">|</span><a href="/posts/4439198/edit" class="suggest-edit-post" title="">improve this answer</a>
+</div>                    </td>
+    <td align="right" class="post-signature">
+
+
+    <div class="user-info ">
+        <div class="user-action-time">
+                                    answered
+                             <a href="/posts/4439198/revisions" title="show all edits to this post"><span title="2010-12-14 12:35:11Z" class="relativetime">Dec 14 '10 at 12:35</span></a>
+
+        </div>
+        <div class="user-gravatar32">
+            
+        </div>
+        <div class="user-details">
+            <br>
+</div>
+    </div>
+    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    
+
+    <div class="user-info">
+        <div class="user-details">
+            <span class="community-wiki" title="This post is community owned as of Dec 14 '10 at 12:35. Votes do not generate reputation, and it can be edited by users with 100 rep">
+                community wiki
+            </span>
+        </div>
+<br><div class="user-details">
+            <a id="history-4439198" href="/posts/4439198/revisions" title="show revision history for this post">
+Florian Bw            </a>
+        </div>
+    </div>
+
+    </td>
+    </tr></table>
+</td>
+        </tr>
+<tr>
+<td class="votecell"></td>
+<td>
+    <div id="comments-4439198" class="comments dno">
+        <table><tbody><tr>
+<td></td>
+<td></td>
+</tr></tbody></table>
+</div>
+    
+</td>
+</tr>
+</table>
+</div>
+
+  
+<a name="8074706"></a>
+<div id="answer-8074706" class="answer" data-answerid="8074706">
+    <table>
+<tr>
+<td class="votecell">
+                
+
+<div class="vote">
+    <input type="hidden" value="8074706"><a class="vote-up-off" title="This answer is useful (click again to undo)">up vote</a>
+    <span class="vote-count-post ">2</span>
+    <a class="vote-down-off" title="This answer is not useful (click again to undo)">down vote</a>
+    
+
+ 
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text">
+<p>Mine includes <code>options(menu.graphics=FALSE)</code> because I like to <a href="http://stackoverflow.com/questions/7430452/disable-suppress-tcltk-prompt-in-r">Disable/suppress tcltk prompt in R</a>.</p>
+</div>
+    <table class="fw"><tr>
+<td class="vt">
+
+
+
+
+
+
+
+
+
+<div class="post-menu">
+<a href="/a/8074706" title="short permalink to this answer" class="short-link" id="link-post-8074706">share</a><span class="lsep">|</span><a href="/posts/8074706/edit" class="suggest-edit-post" title="">improve this answer</a>
+</div>                    </td>
+    <td align="right" class="post-signature">
+
+
+    <div class="user-info ">
+        <div class="user-action-time">
+                                    answered
+                             <a href="/posts/8074706/revisions" title="show all edits to this post"><span title="2011-11-10 03:34:29Z" class="relativetime">Nov 10 '11 at 3:34</span></a>
+
+        </div>
+        <div class="user-gravatar32">
+            
+        </div>
+        <div class="user-details">
+            <br>
+</div>
+    </div>
+    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    
+
+    <div class="user-info">
+        <div class="user-details">
+            <span class="community-wiki" title="This post is community owned as of Nov 10 '11 at 3:34. Votes do not generate reputation, and it can be edited by users with 100 rep">
+                community wiki
+            </span>
+        </div>
+<br><div class="user-details">
+            <a id="history-8074706" href="/posts/8074706/revisions" title="show revision history for this post">
+isomorphismes            </a>
+        </div>
+    </div>
+
+    </td>
+    </tr></table>
+</td>
+        </tr>
+<tr>
+<td class="votecell"></td>
+<td>
+    <div id="comments-8074706" class="comments dno">
+        <table><tbody><tr>
+<td></td>
+<td></td>
+</tr></tbody></table>
+</div>
+    
+</td>
+</tr>
+</table>
+</div>
+
+  
+<a name="11120767"></a>
+<div id="answer-11120767" class="answer" data-answerid="11120767">
+    <table>
+<tr>
+<td class="votecell">
+                
+
+<div class="vote">
+    <input type="hidden" value="11120767"><a class="vote-up-off" title="This answer is useful (click again to undo)">up vote</a>
+    <span class="vote-count-post ">2</span>
+    <a class="vote-down-off" title="This answer is not useful (click again to undo)">down vote</a>
+    
+
+ 
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text">
+<p><code>utils::rc.settings(ipck=TRUE)</code> will turn on completion in <code>library</code> and <code>require</code> calls so that when I type <code>library(su</code> and hit tab, it becomes <code>library(survival</code>.</p>
+
+<p>I also like to put the following on computers that don't have RStudio (these don't work with RStudio)</p>
+
+<pre><code>library(Defaults)
+setDefaults(q, save="no") # don't ask "Save workspace image?" when quitting R
+library(colorout) # Colorize R output in terminal
+</code></pre>
+</div>
+    <table class="fw"><tr>
+<td class="vt">
+
+
+
+
+
+
+
+
+
+<div class="post-menu">
+<a href="/a/11120767" title="short permalink to this answer" class="short-link" id="link-post-11120767">share</a><span class="lsep">|</span><a href="/posts/11120767/edit" class="suggest-edit-post" title="">improve this answer</a>
+</div>                    </td>
+    <td align="right" class="post-signature">
+
+
+    <div class="user-info ">
+        <div class="user-action-time">
+                                    answered
+                             <a href="/posts/11120767/revisions" title="show all edits to this post"><span title="2012-06-20 13:31:36Z" class="relativetime">Jun 20 '12 at 13:31</span></a>
+
+        </div>
+        <div class="user-gravatar32">
+            
+        </div>
+        <div class="user-details">
+            <br>
+</div>
+    </div>
+    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    
+
+    <div class="user-info">
+        <div class="user-details">
+            <span class="community-wiki" title="This post is community owned as of Jun 20 '12 at 13:31. Votes do not generate reputation, and it can be edited by users with 100 rep">
+                community wiki
+            </span>
+        </div>
+<br><div class="user-details">
+            <a id="history-11120767" href="/posts/11120767/revisions" title="show revision history for this post">
+GSee            </a>
+        </div>
+    </div>
+
+    </td>
+    </tr></table>
+</td>
+        </tr>
+<tr>
+<td class="votecell"></td>
+<td>
+    <div id="comments-11120767" class="comments">
+        <table><tbody><tr id="comment-15306266" class="comment">
+<td></td>
+        <td class="comment-text"><div>
+<span class="comment-copy">+1 for answering about I/O color.</span> – <a href="/users/420055/chl" title="6109 reputation" class="comment-user">chl</a> <span class="comment-date" dir="ltr"><span title="2012-07-19 21:53:53Z" class="relativetime-clean">Jul 19 '12 at 21:53</span></span>
+</div></td>
+    </tr></tbody></table>
+</div>
+    
+</td>
+</tr>
+</table>
+</div>
+
+  
+<a name="13030270"></a>
+<div id="answer-13030270" class="answer" data-answerid="13030270">
+    <table>
+<tr>
+<td class="votecell">
+                
+
+<div class="vote">
+    <input type="hidden" value="13030270"><a class="vote-up-off" title="This answer is useful (click again to undo)">up vote</a>
+    <span class="vote-count-post ">2</span>
+    <a class="vote-down-off" title="This answer is not useful (click again to undo)">down vote</a>
+    
+
+ 
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text">
+<p>Here's mine.  Nothing too innovative.  Thoughts on why particular choices:</p>
+
+<ul>
+<li>I went with setting a default for <code>stringsAsFactors</code> because I find
+it extremely draining to pass it as an argument each time I read a CSV in.  That said, it has already caused me some minor vexation when using code written on my usual computer on a computer which did not have my .Rprofile.  I'm keeping it, though, as the troubles it has caused pale in comparison to the troubles not having it set everyday used to cause.</li>
+<li>If you don't load the <code>utils</code> package before <code>options(error=recover)</code>, it cannot find recover when placed inside an <code>interactive()</code> block.</li>
+<li>I used <code>.db</code> for my dropbox setting rather than <code>options(dropbox=...)</code> because I use it all the time inside <code>file.path</code> and it saves much typing.  The leading <code>.</code> keeps it from appearing with <code>ls()</code>.</li>
+</ul>
+<p>Without further ado:</p>
+
+<pre><code>if(interactive()) {
+    options(stringsAsFactors=FALSE)
+    options(max.print=50)
+    options(repos="http://cran.mirrors.hoobly.com")
+}
+
+.db &lt;- "~/Dropbox"
+# `=` &lt;- function(...) stop("Assignment by = disabled, use &lt;- instead")
+options(BingMapsKey="blahblahblah") # Used by taRifx.geo::geocode()
+
+.First &lt;- function() {
+    if(interactive()) {
+        require(functional)
+        require(taRifx)
+        require(taRifx.geo)
+        require(ggplot2)
+        require(foreign)
+        require(R.utils)
+        require(stringr)
+        require(reshape2)
+        require(devtools)
+        require(codetools)
+        require(testthat)
+        require(utils)
+        options(error=recover)
+    }
+}
+</code></pre>
+</div>
+    <table class="fw"><tr>
+<td class="vt">
+
+
+
+
+
+
+
+
+
+<div class="post-menu">
+<a href="/a/13030270" title="short permalink to this answer" class="short-link" id="link-post-13030270">share</a><span class="lsep">|</span><a href="/posts/13030270/edit" class="suggest-edit-post" title="">improve this answer</a>
+</div>                    </td>
+    <td align="right" class="post-signature">
+
+
+    <div class="user-info ">
+        <div class="user-action-time">
+                                    answered
+                             <a href="/posts/13030270/revisions" title="show all edits to this post"><span title="2012-10-23 12:19:41Z" class="relativetime">Oct 23 '12 at 12:19</span></a>
+
+        </div>
+        <div class="user-gravatar32">
+            
+        </div>
+        <div class="user-details">
+            <br>
+</div>
+    </div>
+    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    
+
+    <div class="user-info">
+        <div class="user-details">
+            <span class="community-wiki" title="This post is community owned as of Oct 23 '12 at 12:19. Votes do not generate reputation, and it can be edited by users with 100 rep">
+                community wiki
+            </span>
+        </div>
+<br><div class="user-details">
+            <a id="history-13030270" href="/posts/13030270/revisions" title="show revision history for this post">
+Ari B. Friedman            </a>
+        </div>
+    </div>
+
+    </td>
+    </tr></table>
+</td>
+        </tr>
+<tr>
+<td class="votecell"></td>
+<td>
+    <div id="comments-13030270" class="comments dno">
+        <table><tbody><tr>
+<td></td>
+<td></td>
+</tr></tbody></table>
+</div>
+    
+</td>
+</tr>
+</table>
+</div>
+
+  
+<a name="13096177"></a>
+<div id="answer-13096177" class="answer" data-answerid="13096177">
+    <table>
+<tr>
+<td class="votecell">
+                
+
+<div class="vote">
+    <input type="hidden" value="13096177"><a class="vote-up-off" title="This answer is useful (click again to undo)">up vote</a>
+    <span class="vote-count-post ">2</span>
+    <a class="vote-down-off" title="This answer is not useful (click again to undo)">down vote</a>
+    
+
+ 
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text">
+<p>I found two functions really necessary: First when I have set <code>debug()</code> on several functions and I have resolved the bug, so I want to <code>undebug()</code> all functions - not one by one. The <code>undebug_all()</code> function added as the accepted answer <a href="http://stackoverflow.com/questions/12807237/r-undebug-all-functions">here</a> is the best.</p>
+
+<p>Second, when I have defined many functions and I am looking for a specific variable name, it's hard to find it within all results of the the <code>ls()</code>, including the function names. The <code>lsnofun()</code> function posted <a href="http://stackoverflow.com/questions/13094324/hiding-function-names-from-ls-results-to-find-a-variable-name-more-quickly">here</a> is really good.</p>
+</div>
+    <table class="fw"><tr>
+<td class="vt">
+
+
+
+
+
+
+
+
+
+<div class="post-menu">
+<a href="/a/13096177" title="short permalink to this answer" class="short-link" id="link-post-13096177">share</a><span class="lsep">|</span><a href="/posts/13096177/edit" class="suggest-edit-post" title="">improve this answer</a>
+</div>                    </td>
+    <td align="right" class="post-signature">
+
+
+    <div class="user-info ">
+        <div class="user-action-time">
+                                    answered
+                             <a href="/posts/13096177/revisions" title="show all edits to this post"><span title="2012-10-27 00:39:38Z" class="relativetime">Oct 27 '12 at 0:39</span></a>
+
+        </div>
+        <div class="user-gravatar32">
+            
+        </div>
+        <div class="user-details">
+            <br>
+</div>
+    </div>
+    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    
+
+    <div class="user-info">
+        <div class="user-details">
+            <span class="community-wiki" title="This post is community owned as of Oct 27 '12 at 0:39. Votes do not generate reputation, and it can be edited by users with 100 rep">
+                community wiki
+            </span>
+        </div>
+<br><div class="user-details">
+            <a id="history-13096177" href="/posts/13096177/revisions" title="show revision history for this post">
+Ali            </a>
+        </div>
+    </div>
+
+    </td>
+    </tr></table>
+</td>
+        </tr>
+<tr>
+<td class="votecell"></td>
+<td>
+    <div id="comments-13096177" class="comments dno">
+        <table><tbody><tr>
+<td></td>
+<td></td>
+</tr></tbody></table>
+</div>
+    
+</td>
+</tr>
+</table>
+</div>
+
+  
+<a name="13899799"></a>
+<div id="answer-13899799" class="answer" data-answerid="13899799">
+    <table>
+<tr>
+<td class="votecell">
+                
+
+<div class="vote">
+    <input type="hidden" value="13899799"><a class="vote-up-off" title="This answer is useful (click again to undo)">up vote</a>
+    <span class="vote-count-post ">0</span>
+    <a class="vote-down-off" title="This answer is not useful (click again to undo)">down vote</a>
+    
+
+ 
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text">
+<p>Great Post! Here's a little snippet for use exporting tables to LaTeX.  It changes all the column names to math mode for the many reports I write.  The rest of my .Rprofile is pretty standard and mostly covered above.  Saw some things I'll implement myself up there. =]  </p>
+
+<pre><code># puts $dollar signs in front and behind all column names col_{sub} -&gt; $col_{sub}$
+
+amscols&lt;-function(x){
+    colnames(x) &lt;- paste("$", colnames(x), "$", sep = "")
+    x
+}   
+</code></pre>
+</div>
+    <table class="fw"><tr>
+<td class="vt">
+
+
+
+
+
+
+
+
+
+<div class="post-menu">
+<a href="/a/13899799" title="short permalink to this answer" class="short-link" id="link-post-13899799">share</a><span class="lsep">|</span><a href="/posts/13899799/edit" class="suggest-edit-post" title="">improve this answer</a>
+</div>                    </td>
+    <td align="right" class="post-signature">
+
+
+    <div class="user-info ">
+        <div class="user-action-time">
+                            edited
+                             <a href="/posts/13899799/revisions" title="show all edits to this post"><span title="2012-12-16 08:49:30Z" class="relativetime">Dec 16 '12 at 8:49</span></a>
+
+        </div>
+        <div class="user-gravatar32">
+            
+        </div>
+        <div class="user-details">
+            <br>
+</div>
+    </div>
+    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    
+
+    <div class="user-info">
+        <div class="user-details">
+            <span class="community-wiki" title="This post is community owned as of Dec 16 '12 at 8:43. Votes do not generate reputation, and it can be edited by users with 100 rep">
+                community wiki
+            </span>
+        </div>
+<br><div class="user-details">
+            <a id="history-13899799" href="/posts/13899799/revisions" title="show revision history for this post">
+2 revs, 2 users 67%<br>Nathan G
+            </a>
+        </div>
+    </div>
+
+    </td>
+    </tr></table>
+</td>
+        </tr>
+<tr>
+<td class="votecell"></td>
+<td>
+    <div id="comments-13899799" class="comments dno">
+        <table><tbody><tr>
+<td></td>
+<td></td>
+</tr></tbody></table>
+</div>
+    
+</td>
+</tr>
+</table>
+</div>
+
+
+
+        <h2 class="bottom-notice">
+                Not the answer you're looking for? 
+            Browse other questions tagged <a href="/questions/tagged/r" class="post-tag" title="show questions tagged 'r'" rel="tag">r</a> <a href="/questions/tagged/terminal" class="post-tag" title="show questions tagged 'terminal'" rel="tag">terminal</a> <a href="/questions/tagged/customization" class="post-tag" title="show questions tagged 'customization'" rel="tag">customization</a> <a href="/questions/tagged/rprofile" class="post-tag" title="show questions tagged 'rprofile'" rel="tag">rprofile</a> 
+                or <a href="/questions/ask">ask your own question</a>.
+        </h2>
+</div>
+</div>
+<div id="sidebar">
+
+
+
+     <script type="text/javascript">
+        window.showNewUser = true;
+
+            
+                (function(){
+                    var cs = window.sessionStorage && window.sessionStorage['tNewsletter'];
+                    var m = /:\/\/([^\/]*)/.exec(document.referrer);
+                    var h = {'www.reddit.com':1,'news.ycombinator.com':1};
+                    if(window.sessionStorage && (cs || (m && m.length == 2 && h[m[1]]))){
+                        showNewUser = false;
+                        StackExchange.ready(function(){
+                            StackExchange.newsletterAd.loader(m[1], cs);
+                        });
+                    }
+                    if (window.localStorage && showNewUser){
+                        var c = parseInt(localStorage['nuCounter'],10); 
+                        c = isNaN(c) ? 1 : c+1;
+                        window.localStorage['nuCounter'] = c; 
+                        showNewUser = c < 10;
+                    }
+                })()
+            
+     </script><div class="module newuser newuser-greeting" id="newuser-box" style="display:none;">
+        <h4>Hello World!</h4>
+        <div>
+            <p>This is a collaboratively edited question and answer site for <b>professional and enthusiast programmers</b>. It's 100% free, no registration required.</p>
+            <p class="ar">
+                    <a href="/about?mnu=1">about »</a>   
+                <a href="/faq?mnu=1">faq »</a>
+            </p>
+        </div>
+    </div>
+     <script type="text/javascript">
+        if (showNewUser) {
+            document.getElementById('newuser-box').style.display = '';
+        }
+     </script><div class="module question-stats">
+        <p class="label-key">tagged</p>
+        <div class="tagged">
+<a href="/questions/tagged/r" class="post-tag" title="show questions tagged 'r'" rel="tag">r</a> <span class="item-multiplier"><span class="item-multiplier-x">×</span> <span class="item-multiplier-count">24118</span></span><br><a href="/questions/tagged/terminal" class="post-tag" title="show questions tagged 'terminal'" rel="tag">terminal</a> <span class="item-multiplier"><span class="item-multiplier-x">×</span> <span class="item-multiplier-count">3207</span></span><br><a href="/questions/tagged/customization" class="post-tag" title="show questions tagged 'customization'" rel="tag">customization</a> <span class="item-multiplier"><span class="item-multiplier-x">×</span> <span class="item-multiplier-count">1506</span></span><br><a href="/questions/tagged/rprofile" class="post-tag" title="show questions tagged 'rprofile'" rel="tag">rprofile</a> <span class="item-multiplier"><span class="item-multiplier-x">×</span> <span class="item-multiplier-count">4</span></span><br>
+</div>
+        <table id="qinfo">
+<tr>
+<td><p class="label-key">asked</p></td>
+                <td style="padding-left:10px"><p class="label-key" title="2009-07-27 18:17:42Z"><b>3 years ago</b></p></td>
+            </tr>
+<tr>
+<td><p class="label-key">viewed</p></td>
+
+                <td style="padding-left:10px">
+                    <p class="label-key">
+                        <b>14541 times</b>
+                    </p>
+                </td>
+            </tr>
+<tr>
+<td><p class="label-key">active</p></td>
+                <td style="padding-left:10px"><p class="label-key"><b><a href="?lastactivity" class="lastactivity-link" title="2012-12-16 08:49:30Z">2 months ago</a></b></p></td>
+            </tr>
+</table>
+</div>
+        
+                <script type="text/javascript">
+                var scriptSrc = "http://engine.adzerk.net/z/8277/adzerk1_2_4_43,adzerk2_2_17_45,adzerk3_2_4_44?keywords=r,terminal,customization,rprofile";
+                if (document.referrer) {
+                    if (/\?/.test(scriptSrc))
+                        scriptSrc += "&";
+                    else
+                        scriptSrc += "?";
+                    scriptSrc += "xReferrer=" + document.referrer;
+                }
+                StackExchange.ready(function () {
+                    var z = document.createElement("script");
+                    z.type = "text/javascript";
+                    z.async = "true";
+                    z.src = scriptSrc;
+                    var s = document.getElementsByTagName("script")[0];
+                    s.parentNode.insertBefore(z, s);
+                });
+            </script><div class="everyonelovesstackoverflow" id="adzerk2">
+        </div>
+    <div id="hireme">
+        <script type="text/javascript">
+            var careers_adurl="http://careers.stackoverflow.com/gethired/js",careers_cssurl="//careerscdn.sstatic.net/careers/gethired/sidebar.css?fffffffff879eaa0",careers_leaderboardcssurl="//careerscdn.sstatic.net/careers/gethired/ninja.min.css?3a635e",careers_companycssurl="//careerscdn.sstatic.net/careers/gethired/company",careers_adselector="div.hireme, div#hireme";StackExchange.ready(function(){$.ajax({url:"//careerscdn.sstatic.net/careers/gethired/loader.min.js?3a635e",dataType:"script",cache:!0})})
+        </script>
+</div>
+
+
+
+    
+  
+    
+    <div class="module sidebar-linked">
+        <h4 id="h-linked">Linked</h4>
+        <div class="linked" data-tracker="lq=1">
+            <div class="spacer">
+<a href="/questions/1358003/tricks-to-manage-the-available-memory-in-an-r-session" class="question-hyperlink">Tricks to manage the available memory in an R session?</a>
+</div>
+<div class="spacer">
+<a href="/questions/4222476/r-display-a-time-clock-in-the-r-command-line" class="question-hyperlink">R: Display a time clock in the R command line</a>
+</div>
+<div class="spacer">
+<a href="/questions/4996090/how-to-disable-save-workspace-image-prompt-in-r" class="question-hyperlink">How to disable “Save workspace image?” prompt in R?</a>
+</div>
+<div class="spacer">
+<a href="/questions/12807237/r-undebug-all-functions" class="question-hyperlink">R undebug all functions</a>
+</div>
+<div class="spacer">
+<a href="/questions/8475102/set-default-cran-mirror-permanent-in-r" class="question-hyperlink">set default CRAN mirror permanent in R</a>
+</div>
+<div class="spacer">
+<a href="/questions/7494848/standard-way-to-remove-multiple-elements-from-a-dataframe" class="question-hyperlink">Standard way to remove multiple elements from a dataframe</a>
+</div>
+<div class="spacer">
+<a href="/questions/5306017/questions-about-r-startup-home-directory-vs-working-directory-rprofile-site" class="question-hyperlink">Questions about r startup. home directory vs. working directory. Rprofile.site, ect</a>
+</div>
+<div class="spacer">
+<a href="/questions/7430452/disable-suppress-tcltk-prompt-in-r" class="question-hyperlink">Disable/suppress tcltk prompt in R</a>
+</div>
+<div class="spacer">
+<a href="/questions/13094324/hiding-function-names-from-ls-results-to-find-a-variable-name-more-quickly" class="question-hyperlink">Hiding function names from ls() results - to find a variable name more quickly</a>
+</div>
+<div class="spacer">
+<a href="/questions/6382286/avoiding-browser-calls-in-r" class="question-hyperlink">avoiding browser calls in R</a>
+</div>
+<div class="spacer">
+<a href="/questions/13024167/how-to-make-head-be-applied-automatically-to-output" class="question-hyperlink">How to make 'head' be applied automatically to output?</a>
+</div>
+<div class="spacer">
+<a href="/questions/4425186/setting-default-url-for-r-to-look-for-packages-in-mac-os-x" class="question-hyperlink">Setting default url for R to look for packages in Mac OS X</a>
+</div>
+<div class="spacer">
+<a href="/questions/1351937/r-package-installation-question" class="question-hyperlink">R package installation question</a>
+</div>
+<div class="spacer">
+<a href="/questions/13235100/empty-plot-in-r" class="question-hyperlink">Empty plot in R</a>
+</div>
+<div class="spacer">
+<a href="/questions/3409452/what-code-would-you-put-before-after-your-r-session" class="question-hyperlink">What code would you put before/after your R session?</a>
+</div>
+<div class="spacer">
+<a href="/questions/6686814/avoiding-sourcing-a-written-script-in-r" class="question-hyperlink">Avoiding sourcing a written script in R</a>
+</div>
+<div class="spacer">
+<a href="/questions/13595759/make-sure-all-default-packages-are-loaded-before-running-rprofile" class="question-hyperlink">Make sure all default packages are loaded before running .Rprofile</a>
+</div>
+<div class="spacer">
+<a href="/questions/14185287/escaping-in-string-or-paths-in-r" class="question-hyperlink">Escaping \ in string or paths in R</a>
+</div>
+<div class="spacer">
+<a href="/questions/7857290/what-is-the-impact-or-value-of-listing-multiple-repositories-in-optionsrepos" class="question-hyperlink">What is the impact or value of listing multiple repositories in .Options$repos, in R?</a>
+</div>
+<div class="spacer">
+<a href="/questions/14541266/strange-dashed-lines-in-zoo-plot" class="question-hyperlink">Strange dashed lines in zoo plot</a>
+</div>
+<div class="spacer">
+<a href="/questions/14476525/customizing-r-profile" class="question-hyperlink">Customizing R profile</a>
+</div>
+<div class="spacer more">
+<a href="/search?q=url%3a%22http%3a%2f%2fstackoverflow.com%2fquestions%2f1189759%2f*%22">see more linked questions…</a>
+</div>
+
+        </div>
+    </div>
+    <div class="module sidebar-related">
+        <h4 id="h-related">Related</h4>
+        <div class="related" data-tracker="rq=1">
+            <div class="spacer">
+<a href="/questions/748001/not-letting-users-make-mistakes-vs-giving-them-flexibility" class="question-hyperlink">Not letting users make mistakes vs. giving them flexibility</a>
+</div>
+<div class="spacer">
+<a href="/questions/1463444/word-wrapping-in-the-r-environment-for-windows" class="question-hyperlink">Word-wrapping in the R environment for Windows</a>
+</div>
+<div class="spacer">
+<a href="/questions/1940324/mysql-color-scheme" class="question-hyperlink">Mysql Color Scheme</a>
+</div>
+<div class="spacer">
+<a href="/questions/2040829/customization-of-css-for-huge-number-of-users" class="question-hyperlink">Customization of Css for huge number of users</a>
+</div>
+<div class="spacer">
+<a href="/questions/3722193/whats-the-name-of-the-item-that-controls-the-color-of-http-links-inside-string" class="question-hyperlink">What's the name of the item that controls the color of http links inside string literals in Visual Studio 2010?</a>
+</div>
+<div class="spacer">
+<a href="/questions/4385052/ess-ess-request-a-process-defaults-to-s" class="question-hyperlink">ESS: ess-request-a-process defaults to “S”</a>
+</div>
+<div class="spacer">
+<a href="/questions/4964814/make-resizable-plots-using-the-grid-graphing-system-in-r" class="question-hyperlink">Make resizable plots using the grid graphing system in R</a>
+</div>
+<div class="spacer">
+<a href="/questions/5479804/how-to-load-variations-of-a-code-based-on-user" class="question-hyperlink">How to load variations of a code based on user?</a>
+</div>
+<div class="spacer">
+<a href="/questions/5632687/setting-proxy-on-rprofile-on-osx-fails" class="question-hyperlink">Setting proxy on .Rprofile on OSX fails</a>
+</div>
+<div class="spacer">
+<a href="/questions/5666243/django-admin-adding-a-field-to-displayed-user-list" class="question-hyperlink">Django admin - adding a field to displayed user list</a>
+</div>
+<div class="spacer">
+<a href="/questions/7725152/dynamic-column-resizing-in-rprofile" class="question-hyperlink">Dynamic column resizing in .Rprofile</a>
+</div>
+<div class="spacer">
+<a href="/questions/8706051/to-those-of-you-who-do-a-majority-of-you-developement-work-in-vim-what-does-you" class="question-hyperlink">To those of you who do a majority of you developement work in vim; What does your workflow look like?</a>
+</div>
+<div class="spacer">
+<a href="/questions/8902602/is-there-a-way-to-know-the-options-of-a-shell-terminal-command-application" class="question-hyperlink">Is there a way to know the options of a shell/terminal command/application?</a>
+</div>
+<div class="spacer">
+<a href="/questions/9549005/vim-for-python-and-r-scripting-in-screen-or-not" class="question-hyperlink">Vim for python and R scripting (in Screen or not)</a>
+</div>
+<div class="spacer">
+<a href="/questions/9666710/using-the-package-hiddenmarkov-with-customized-probability-distribution-of-obser" class="question-hyperlink">Using the package HiddenMarkov with customized probability distribution of observables</a>
+</div>
+<div class="spacer">
+<a href="/questions/10369771/exclusively-mark-ys-variables-when-merging-in-loop" class="question-hyperlink">exclusively mark y's variables when merging in loop</a>
+</div>
+<div class="spacer">
+<a href="/questions/10512743/what-is-happening-when-i-press-control-c-in-the-r-terminal" class="question-hyperlink">What is happening when I press Control-C in the R terminal?</a>
+</div>
+<div class="spacer">
+<a href="/questions/10610067/installing-packages-upon-starting-r-session" class="question-hyperlink">Installing packages upon starting R session</a>
+</div>
+<div class="spacer">
+<a href="/questions/11123969/r-skips-lines-from-dev-stdin" class="question-hyperlink">R skips lines from /dev/stdin</a>
+</div>
+<div class="spacer">
+<a href="/questions/11488704/rprofile-site-cant-work" class="question-hyperlink">Rprofile.site can't work</a>
+</div>
+<div class="spacer">
+<a href="/questions/11677685/cat-outputs-integers-instead-of-list-values-in-r" class="question-hyperlink">cat() outputs integers instead of list values in R</a>
+</div>
+<div class="spacer">
+<a href="/questions/12761756/how-can-i-have-users-only-see-their-content-in-wordpress" class="question-hyperlink">How can I have users only see their content in Wordpress?</a>
+</div>
+<div class="spacer">
+<a href="/questions/12766014/whats-the-terminal-command-to-show-detailed-progress" class="question-hyperlink">What's the terminal command to show detailed progress?</a>
+</div>
+<div class="spacer">
+<a href="/questions/13216480/paste-character-limit" class="question-hyperlink">paste character limit</a>
+</div>
+<div class="spacer">
+<a href="/questions/13735745/locate-the-rprofile-file-generating-default-options" class="question-hyperlink">locate the “.Rprofile” file generating default options</a>
+</div>
+
+        </div>
+    </div>
+        <div class="everyonelovesstackoverflow" id="adzerk3">
+        </div>
+
+
+</div>
+<script type="text/javascript">
+StackExchange.ready(function(){$.get('/posts/1189759/ivc/e468');});
+</script><noscript>
+    <div><img src="/posts/1189759/ivc/e468" class="dno" alt="" width="0" height="0"></div>
+</noscript>
+<div style="display:none" id="prettify-lang">default</div>
+</div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="footerwrap">
+            <div id="footer-menu">
+                    <a href="/about">about</a> |
+                <a href="/faq">faq</a> |
+                <a href="http://blog.stackexchange.com?blb=1">blog</a> |
+                    <a href="http://chat.stackoverflow.com">chat</a> |
+                <a href="http://data.stackexchange.com">data</a> |
+                <a href="http://stackexchange.com/legal">legal</a> |
+                <a href="http://stackexchange.com/legal/privacy-policy">privacy policy</a> |
+                <a href="http://stackexchange.com/about/hiring">jobs</a> |
+                <a href="http://engine.adzerk.net/redirect/0/2776/2751/0/4de3c60f719c4dfcb1a57531c7050090/0">advertising info</a> |
+
+                <a onclick="StackExchange.switchMobile('on', '/questions/1189759/expert-r-users-whats-in-your-rprofile')">mobile</a> |
+
+                <b><a href="/help">contact us</a></b>
+                  | <b><a href="http://meta.stackoverflow.com">feedback</a></b>
+                <div id="footer-sites">
+                    
+                        <span style="color:#FE7A15;font-size:140%">■</span> <a href="http://stackoverflow.com">stackoverflow.com</a>  
+                        <span style="color:#FE7A15;font-size:140%">■</span> <a href="http://stackapps.com">api/apps</a>  
+                        <span style="color:#FE7A15;font-size:140%">■</span> <a href="http://careers.stackoverflow.com">careers 2.0</a>  
+                        <span style="color:#E8272C;font-size:140%">■</span> <a href="http://serverfault.com">serverfault.com</a>  
+                        <span style="color:#00AFEF;font-size:140%">■</span> <a href="http://superuser.com">superuser.com</a>  
+                        <span style="color:#969696;font-size:140%">■</span> <a href="http://meta.stackoverflow.com">meta</a>  
+                        <span style="color:#46937D;font-size:140%">■</span> <a href="http://area51.stackexchange.com">area 51</a>  
+                        <span style="color:#C0D0DC;font-size:140%">■</span> <a href="http://webapps.stackexchange.com">webapps</a>  
+                        <span style="color:#000000;font-size:140%">■</span> <a href="http://gaming.stackexchange.com">gaming</a>  
+                        <span style="color:#dd4814;font-size:140%">■</span> <a href="http://askubuntu.com">ubuntu</a>  
+                        <span style="color:#9ce4fe;font-size:140%">■</span> <a href="http://webmasters.stackexchange.com">webmasters</a>  
+                        <span style="color:#cf4d3f;font-size:140%">■</span> <a href="http://cooking.stackexchange.com">cooking</a>  
+                        <span style="color:#f4f28d;font-size:140%">■</span> <a href="http://gamedev.stackexchange.com">game development</a>  
+                        <span style="color:#0f3559;font-size:140%">■</span> <a href="http://math.stackexchange.com">math</a>  
+                        <span style="color:#f2f2f2;font-size:140%">■</span> <a href="http://photo.stackexchange.com">photography</a>  
+                        <span style="color:#037187;font-size:140%">■</span> <a href="http://stats.stackexchange.com">stats</a>  
+                        <span style="color:#f1e7cc;font-size:140%">■</span> <a href="http://tex.stackexchange.com">tex</a>  
+                        <span style="color:#e1cdae;font-size:140%">■</span> <a href="http://english.stackexchange.com">english</a>  
+                        <span style="color:#a2d9f6;font-size:140%">■</span> <a href="http://cstheory.stackexchange.com">theoretical cs</a>  
+                        <span style="color:#1b3e6c;font-size:140%">■</span> <a href="http://programmers.stackexchange.com">programmers</a>  
+                        <span style="color:#293a5d;font-size:140%">■</span> <a href="http://unix.stackexchange.com">unix</a> 
+                        <span style="color:#bec0cb;font-size:140%">■</span> <a href="http://apple.stackexchange.com">apple</a> 
+                        <span style="color:#939185;font-size:140%">■</span> <a href="http://wordpress.stackexchange.com">wordpress</a> 
+                        <span style="color:#ebf5f5;font-size:140%">■</span> <a href="http://physics.stackexchange.com">physics</a> 
+                        <span style="color:#4176ab;font-size:140%">■</span> <a href="http://diy.stackexchange.com">home improvement</a> 
+                        <span style="color:#d1d8d7;font-size:140%">■</span> <a href="http://gis.stackexchange.com">gis</a> 
+                        <span style="color:#e5e2d3;font-size:140%">■</span> <a href="http://electronics.stackexchange.com">electrical engineering</a> 
+                        <span style="color:#a4c639;font-size:140%">■</span> <a href="http://android.stackexchange.com">android</a> 
+                        <span style="color:#2e4e60;font-size:140%">■</span> <a href="http://security.stackexchange.com">security</a> 
+                        <span style="color:#45bcb5;font-size:140%">■</span> <a href="http://bicycles.stackexchange.com">bicycles</a> 
+                        <span style="color:#00adee;font-size:140%">■</span> <a href="http://dba.stackexchange.com">dba</a> 
+                        <span style="color:#2edaf0;font-size:140%">■</span> <a href="http://drupal.stackexchange.com">drupal</a> 
+                        <span style="color:#213951;font-size:140%">■</span> <a href="http://sharepoint.stackexchange.com">sharepoint</a> 
+                        <span style="color:#73abb3;font-size:140%">■</span> <a href="http://scifi.stackexchange.com">scifi &amp; fantasy</a> 
+                        <span style="color:#23629F;font-size:140%">■</span> <a href="http://ux.stackexchange.com">user experience</a> 
+                        <span style="color:#faff72;font-size:140%">■</span> <a href="http://skeptics.stackexchange.com">skeptics</a> 
+                        <span style="color:#623121;font-size:140%">■</span> <a href="http://rpg.stackexchange.com">rpg</a> 
+                        <span style="color:#e4be88;font-size:140%">■</span> <a href="http://judaism.stackexchange.com">judaism</a> 
+                        <span style="color:#ffecb1;font-size:140%">■</span> <a href="http://mathematica.stackexchange.com">mathematica</a> 
+                        <span style="color:#1b8598;font-size:140%">■</span> <a href="http://travel.stackexchange.com">travel</a> 
+                </div>
+            </div>
+            <div id="footer-flair">
+                <a class="peer1" href="http://www.peer1.com/stackoverflow"></a>  
+	            <a href="http://creativecommons.org/licenses/by-sa/3.0/" class="cc-wiki-link"></a>
+                <div id="svnrev">rev 2013.2.16.507</div>
+                        </div>
+            <div id="copyright">
+                site design / logo © 2013 stack exchange inc; 
+                user contributions licensed under <a href="http://creativecommons.org/licenses/by-sa/3.0/" rel="license">cc-wiki</a> with <a href="http://blog.stackoverflow.com/2009/06/attribution-required/" rel="license">attribution required</a>
+            </div>
+            
+
+        </div>
+    </div>
+    
+    <noscript>
+        <div id="noscript-warning">Stack Overflow works best with JavaScript enabled<img src="http://pixel.quantserve.com/pixel/p-c1rF4kxgLUzNc.gif" alt="" class="dno">
+</div>
+    </noscript>
+    <script type="text/javascript">var _gaq=_gaq||[];_gaq.push(['_setAccount','UA-5620270-1']);
+        _gaq.push(['_setCustomVar', 1, 'tags', '|r|terminal|customization|rprofile|']); 
+_gaq.push(['_trackPageview']);
+    var _qevents = _qevents || [];
+    (function(){
+        var s=document.getElementsByTagName('script')[0];
+        var ga=document.createElement('script');
+        ga.type='text/javascript';
+        ga.async=true;
+        ga.src='http://www.google-analytics.com/ga.js';
+        s.parentNode.insertBefore(ga,s);
+        var sc=document.createElement('script');
+        sc.type='text/javascript';
+        sc.async=true;
+        sc.src='http://edge.quantserve.com/quant.js'; 
+        s.parentNode.insertBefore(sc,s);
+    })();
+    </script><script type="text/javascript">
+        _qevents.push({ qacct: "p-c1rF4kxgLUzNc" });
+    </script>
+</body>
+</html>
+ 
